@@ -1,3 +1,11 @@
+#Who:
+Alleman, Paige  
+Hsu, Caleb  
+Kim, Amos  
+Lewis, Mitchell  
+Wagner, Thomas  
+
+
 #Title: 
 ProjectPlatypus
 
