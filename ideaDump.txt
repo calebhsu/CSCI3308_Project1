@@ -5,7 +5,11 @@
 -
 
 #Caleb
--
+- web app
+- account / login required
+  >> customizable profile w/ major, year, etc. to make matching easier
+- category options: project, study group, extracurricular
+- sort by tags per category
 
 #Leo
 -
