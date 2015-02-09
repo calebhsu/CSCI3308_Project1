@@ -15,7 +15,13 @@
 -
 
 #Mitch
--
+-sort by different tags
+  year in school
+  study preferences (big group vs small group, library vs coffee shop, etc)
+-be able to pick specific classes, find others with same classes
+-Upload a picture to account
+-Upload a brief bio, or info section to account describing experience/interests
+-could also be used to find people for intramural teams
 
 #Tommy
 -
