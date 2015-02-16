@@ -34,8 +34,15 @@ N - 01	As an administrator, I want accounts to auto-log out after x amount of ti
 N - 02	As an administrator, I want passwords to be recoverable to ensure reliability and access 	3
 N - 03	As an administrator I want users to be able to log in with a unique UserID so that users can be easily distinguished by their ID’s	1
 
-#Methodology: Agile mixed with elements of iterfall 
-#Project Tracking Software: Trello
-#Link to Project Tracking Software: https://trello.com/b/RJYTYbXx/projectplatypus
+#Methodology: 
+Agile mixed with elements of iterfall 
+
+#Project Tracking Software: 
+Trello
+
+#Link to Project Tracking Software: 
+https://trello.com/b/RJYTYbXx/projectplatypus
+
 #Project Plan: 
+https://cloud.githubusercontent.com/assets/10746940/6220136/a6fdbaf6-b5ef-11e4-9db6-f133d584b1c8.png
 
