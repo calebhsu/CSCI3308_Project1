@@ -10,4 +10,5 @@ Paige Alleman, Caleb Hsu, Amos Leo Kim, Mitchell Lewis, Thomas Wagner
 #Database:
 MYSQL
 
-#E-R Diagram
+#E-R Diagram:
+![diagram](ERDiagram.png)
