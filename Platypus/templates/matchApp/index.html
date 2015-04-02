@@ -5,17 +5,33 @@
 <html>
 
     <head>
-        <title>Platypus</title>
+        <title>Platypus Login</title>
         <link rel="stylesheet" href="{% static "css/base.css" %}" /> <!-- CSS -->
         <script src="{% static "js/jquery.js" %}"></script> <!-- JavaScript -->
     </head>
 
     <body>
-        <h1>Including Static Media</h1>
-        Doesn't this look incredibly delicious? <strong>{{ boldmessage }}</strong><br />
-        <a href="/matchApp/about/">The History of Waffles</a><br />
-        <p></p>
-        <img src="{% static "images/waffles.jpg" %}" alt="Picture of Waffles" />
+        <img src="{% static "images/sheep.jpg" %}" alt="Picture of Sheep" />
+        <h1 id="logo"> Platypus </h1>
+        <h2>Welcome to Platypus!!</h2>
+        <form id="login_form" method="post" action="/matchApp/login/">
+            <div>
+                Username: <input type="text" name="username" value="" size="30em"/>
+                <br>
+                Password: <input type="password" name="password" value="" size="30em"/>
+                <br>
+                <br>
+                <button type="submit" value="submit" class="btn btn-default btn-lg btn-block">Submit</button>
+        </form>
+        <form><input type="button" class="btn btn-default btn-lg btn-block" value="Sign Up"></form>   
+        </div>
+        <div>
+            <h3> What is Platypus? </h3>
+            <p> Platypus is an online application designed to help students share and collaborate by aiding in project group selection! Our goal is to have Platypus be the new social media platform of academia.</p>
+        </div>
+        <footer>
+            <p> &copy Team Platypus </p>
+        </footer>
     </body>
 
 </html>
