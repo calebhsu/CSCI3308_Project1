@@ -109,7 +109,6 @@ samp {
   font-family: monospace, monospace;
   font-size: 1em;
 }
-button,
 input,
 optgroup,
 select,
@@ -121,7 +120,7 @@ textarea {
 button {
   overflow: visible;
 }
-button,
+
 select {
   text-transform: none;
 }
@@ -1093,7 +1092,6 @@ body {
   background-color: #fff;
 }
 input,
-button,
 select,
 textarea {
   font-family: inherit;
@@ -2573,9 +2571,7 @@ output {
 .form-control:-ms-input-placeholder {
   color: #999;
 }
-.form-control::-webkit-input-placeholder {
-  color: #999;
-}
+
 .form-control[disabled],
 .form-control[readonly],
 fieldset[disabled] .form-control {
