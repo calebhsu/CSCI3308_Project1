@@ -1,16 +1,56 @@
 <!DOCTYPE html>
 
-{% load static %}
+{% load static %} 
 
 <html>
+
     <head>
-        <title>Platypus Home</title>
-        <link rel="stylesheet" href="{% static "css/base.css" %}" /> <!-- CSS -->
-        <script src="{% static "js/jquery.js" %}"></script> <!-- JavaScript -->
+        <!-- CSS -->
+        <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+        <link href="{% static 'css/styles.css' %}" rel="stylesheet">
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Economica' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+        <title>Platypus</title>
     </head>
 
     <body>
-        <img src="{% static "images/waffles.jpg" %}" alt="Picture of Waffles" />
-        <p>Welcome!</p>
+        <div class="container-fluid">
+            <div id="topbar"></div>
+            
+            <img src="{% static "images/background.jpg" %}" id="bg" alt="Background"/>
+
+            <div id="sidebar">
+                <div style="text-align: center; margin-top: 84px">
+                    <img src="http://cdn.flaticon.com/png/256/47119.png" style="width:200px;height:200px"/>
+                </div>
+            </div>
+
+            <div id="navbar">
+                <div class="btn-group">
+                    <button type="button" class="nav" id="navfont">List of Classes</button>
+                    <button type="button" class="nav" id="navfont">My Groups</button>
+                    <button type="button" class="nav" id="navfont">Logout</button>
+                </div>
+            </div>
+
+            <div id="infoBlock"></div>
+            <div id="infoText">
+                <h1 class="title"> About Platypus </h1>
+                <p class="title">--------------------</p>
+                <p class="desc">Platypus is an online application designed to help students share and collaborate by aiding in project group selection. Looking for a group? Add your class and get automatically matched with fellow classmates!</p>
+            </div>
+
+            <footer>
+                <p class="cred">&copy Team Platypus</p>
+            </footer>
+        </div>
     </body>
+
 </html>
