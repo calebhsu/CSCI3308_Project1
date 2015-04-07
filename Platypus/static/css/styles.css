@@ -1,8 +1,15 @@
-/* Layout */
+/* ---Layout--- */
 body {
   padding-top: 40px;
   padding-bottom: 40px;
   background-color: #eee;
+}
+
+
+p {
+  padding: 2px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 #bg {
@@ -56,50 +63,44 @@ body {
   border: solid white 2px;
   position: fixed;
 }
+/* ---------- */
 
-#navbar {
-  width: 300px;
-  top: 300px;
-  right: 10px;
-  position: fixed;
+/* ---Button Navigation Bar--- */
+button {
+  font-family: 'Lato';
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  display: block;
+  overflow: visible;
 }
 
 .nav {
   width: 200px;
   height: 50px;
   color: white;
-  position: fixed;
+  margin-top: 15px;
 }
 
-p {
-  padding: 2px;
-  padding-right: 10px;
-  padding-left: 10px;
-}
-
-/* Text */
-h1, h2, h3 {
-  padding: 5px;
-}
-
-#infoText {
-  font-family: 'Economica';
-  font-size: 20px;
-  color: white;
-  width: 400px;
-  height: 400px;
-  border: double black 2px;
-  margin-top: 100px;
-  margin-left: 200px;
-  position: fixed;
-}
 
 #navfont {
   font-family: 'Montserrat';
-  font-size: 16px;
+  font-size: 14px;
   color: black;
   letter-spacing: 1px;
+}
+
+#navbar {
+  width: 300px;
+  top: 300px;
+  right: 10px;
   position: fixed;
+} */
+/* ---------- */
+
+
+/* ---Text--- */
+h1, h2, h3 {
+  padding: 5px;
 }
 
 .title {
@@ -123,7 +124,20 @@ h1, h2, h3 {
   position: fixed;
 }
 
-/* Sign-In Form Stuff */
+#infoText {
+  font-family: 'Economica';
+  font-size: 20px;
+  color: white;
+  width: 400px;
+  height: 400px;
+  border: double black 2px;
+  margin-top: 100px;
+  margin-left: 200px;
+  position: fixed;
+}
+/* ---------- */
+
+/* ---Sign-In Form Stuff--- */
 .form-signin {
   max-width: 330px;
   padding: 15px;
@@ -177,10 +191,4 @@ h1, h2, h3 {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
-
-button {
-  font-family: 'Lato';
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  overflow: visible;
-}
+/* ---------- */
