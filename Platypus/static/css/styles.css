@@ -5,14 +5,13 @@ body {
   background-color: #eee;
 }
 
-
 p {
   padding: 2px;
   padding-right: 10px;
   padding-left: 10px;
 }
 
-#bg {
+#background {
   position: absolute; 
   top: 0; 
   left: 0; 
@@ -63,7 +62,7 @@ p {
   border: solid white 2px;
   position: fixed;
 }
-/* ---------- */
+
 
 /* ---Button Navigation Bar--- */
 button {
@@ -74,19 +73,11 @@ button {
   overflow: visible;
 }
 
-.nav {
+.navbutton {
   width: 200px;
   height: 50px;
   color: white;
   margin-top: 15px;
-}
-
-
-#navfont {
-  font-family: 'Montserrat';
-  font-size: 14px;
-  color: black;
-  letter-spacing: 1px;
 }
 
 #navbar {
@@ -95,7 +86,6 @@ button {
   right: 10px;
   position: fixed;
 } */
-/* ---------- */
 
 
 /* ---Text--- */
@@ -135,7 +125,14 @@ h1, h2, h3 {
   margin-left: 200px;
   position: fixed;
 }
-/* ---------- */
+
+#navfont {
+  font-family: 'Montserrat';
+  font-size: 14px;
+  color: black;
+  letter-spacing: 1px;
+}
+
 
 /* ---Sign-In Form Stuff--- */
 .form-signin {
@@ -191,4 +188,3 @@ h1, h2, h3 {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
-/* ---------- */
