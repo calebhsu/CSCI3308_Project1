@@ -25,7 +25,7 @@ class Course(models.Model):
 	course_number = models.IntegerField(default=0)
 
 	def __unicode__(self):
-		return self.title	
+		return unicode(self.title)	
 
 class Section(models.Model):
 	class_id = models.IntegerField(default=0)
@@ -34,7 +34,7 @@ class Section(models.Model):
 	section_number = models.IntegerField(default=0)
 
 	def __unicode__(self):
-		return self.class_id	
+		return unicode(self.class_id)	
 
 class Student(models.Model):
 	student_id = models.IntegerField(default=0)
@@ -52,4 +52,4 @@ class Student(models.Model):
 	#pic_url = models.URLField()
 
 	def __unicode__(self):
-		return self.student_id
+		return unicode(self.student_id)
