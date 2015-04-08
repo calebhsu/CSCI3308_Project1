@@ -2,7 +2,7 @@ from django.db import models
 
 
 class Course(models.Model):
-	title = models.CharField(max_length=64)
+	title = models.CharField(max_length=64, default="")
 	dept_id = models.CharField(max_length=4, default="")
 	course_number = models.IntegerField(default=0)
 
@@ -20,7 +20,7 @@ class Section(models.Model):
 		return unicode(self.class_id)
 
 class Student(models.Model): #class ClassName(<some_class>) <-- allows you to inherit from some_class
-	student_id = models.IntegerField()
+	student_id = models.IntegerField(default=0)
 	first_name = models.CharField(max_length=64, default="")
 	last_name = models.CharField(max_length=64, default="")
 
@@ -38,8 +38,8 @@ class Student(models.Model): #class ClassName(<some_class>) <-- allows you to in
 	course_list = models.CharField(max_length=1024, default="")
 
 
-	view_url = models.URLField()
-	pic_url = models.URLField()
+	view_url = models.URLField(default="")
+	pic_url = models.URLField(default="")
 
 	def __unicode__(self):
 		return unicode(self.student_id)

@@ -1,5 +1,5 @@
 import os
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'platypus_project.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Platypus.settings')
 
 import django
 django.setup()
