@@ -1,7 +1,6 @@
 from django.contrib import admin
+from matchApp.models import Course, Section, Student
 
-# Register your models here.
-from matchApp.models import Student, Course
-
-admin.site.register(Student)
 admin.site.register(Course)
+admin.site.register(Section)
+admin.site.register(Student)
