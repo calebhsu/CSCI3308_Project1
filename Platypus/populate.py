@@ -64,7 +64,7 @@ def populate():
 	sample_course_list_3 = "1300002,2270002,2400003"
 	sample_course_list_4 = "1300003,2270001,2400003"
 
-	add_student(1000, "Barack", "Obama",  "password123", "bobama@colorado.edu", sample_course_list_1,"", "")
+	add_student(900000001, "Barack", "Obama",  "password123", "bobama@colorado.edu", sample_course_list_1,"", "")
 	add_student(900000002, "Vladimir", "Putin", "password123", "vputin@colorado.edu", sample_course_list_2, "", "")
 	add_student(900000003, "Dear", "Leader", "password123", "dearleader@colorado.edu", sample_course_list_3, "", "")
 	add_student(900000004, "Doctor", "Zoidberg", "password123", "zoidberg@colorado.edu", sample_course_list_4, "", "")
