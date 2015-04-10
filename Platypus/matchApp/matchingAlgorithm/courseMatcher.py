@@ -4,6 +4,12 @@
 #	<student ID>
 #	<comma-separated string of courses associated with that student>
 
+
+#STILL NEEDS:
+#Method to append department code to front of each extracted course ID
+#Possible solutions:
+#Query db for associated dept id in pipeToText.py
+
 import sys
 
 coursesFile = open(sys.argv[1],'r')
@@ -11,7 +17,7 @@ studentsFile = open(sys.argv[2],'r')
 
 coursesDict = {}
 dictSize = 0
-#sectionsArray = []
+
 for line in coursesFile:
 	line = line.rstrip()
 	line = line[0:4]
