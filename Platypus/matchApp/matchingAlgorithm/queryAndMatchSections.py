@@ -22,19 +22,18 @@ django.setup()
 
 
 #Create a hashtable that will save sections numbers as keys and arrays of enrolled students as values
-#Initialize size counter to calculate number of entries cheaply
 sectionsDict = {}
-dictSize = 0
 
-#Query all rows in Section table; Output return value for each object
+#Query all rows in Section table;
+#For each section, create an entry with the section number as the key and an empty array as the value
 for section in Section.objects.all():
 	sectionString = str(section).rstrip()
 	sectionsDict[sectionString] = []
-	dictSize += 1
-
-
-
-#Query all rows in Student table; Output return value for each object and its course_list attribute
+	
+#Query all rows in Student table; 
+#Concatenate the SID and course_list attributes of each student object, coercing return values to strings;
+#Save comma-separated entries of the concatenated string into an array;
+#For every course the student is enrolled in, add the SID to the array hashed by the dictionary
 for student in Student.objects.all():
 	sid = str(student).rstrip()
 	courseString = str(student.course_list).rstrip()
