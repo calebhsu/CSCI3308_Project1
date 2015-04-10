@@ -5,12 +5,12 @@ import django
 django.setup()
 
 from matchApp.models import Course, Section, Student, User
-
-	
 import sys
 
+current_directory = os.getcwd()
+
 orig_stdout = sys.stdout
-student_file = file('students.txt', 'w')
+student_file = file(current_directory+'/matchApp/matchingAlgorithm/'+'students.txt', 'w')
 sys.stdout = student_file
 
 for i in Student.objects.all():
@@ -21,7 +21,7 @@ sys.stdout = orig_stdout
 student_file.close()
 
 orig_stdout = sys.stdout
-section_file = file('sections.txt', 'w')
+section_file = file(current_directory+'/matchApp/matchingAlgorithm/'+'sections.txt', 'w')
 sys.stdout = section_file
 
 for i in Section.objects.all():
