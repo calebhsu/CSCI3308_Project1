@@ -1,20 +1,34 @@
+##############################################################################
+# Always run this block first so environmental variables are properly loaded #
 import os
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'platypus_project.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Platypus.settings')
+##############################################################################
 
+import sys
 import django
+from matchApp.models import Course, Section, Student, User
+
+
 django.setup()
 
-from matchApp.models import Course, Section, Student
+#Retrieve current working directory so files can be saved to a nested folder
+current_directory = os.getcwd()
 
-	
-import sys
+#Redirect standard output to new students.txt file in specified nested directory (/matchApp/matchingAlgorithm)
+sys.stdout = open(current_directory+'/matchApp/matchingAlgorithm/'+'students.txt', 'w')
 
-orig_stdout = sys.stdout
-f = file('student.txt', 'w')
-sys.stdout = f
+#Query all rows in Student table; Output return value for each object and its course_list attribute
+for i in Student.objects.all():
+	print i
+	print i.course_list
 
-for i in Student.object.raw('SELECT student_id, course_list FROM models.py'):
-    print i
+sys.stdout.close()
 
-sys.stdout = orig_stdout
-f.close()
+#Redirect standard output to new sections.txt file in specified nested directory (/matchApp/matchingAlgorithm)
+sys.stdout = file(current_directory+'/matchApp/matchingAlgorithm/'+'sections.txt', 'w')
+
+#Query all rows in Section table; Output return value for each object
+for i in Section.objects.all():
+	print i
+
+sys.stdout.close()
