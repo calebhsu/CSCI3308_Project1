@@ -8,16 +8,16 @@ from matchApp.models import Course, Section, Student
 from matchApp.models import User
 
 def populate():
-	csci_1300 = add_course("Computer Science 1: Starting Computing", "CSCI", 1300)
-	csci_1310 = add_course("Computer Science 1: Starting Computing - Experienced", "CSCI", 1310)
-	csci_2270 = add_course("Computer Science 2: Data Structures", "CSCI", 2270)
-	csci_2400 = add_course("Computer Systems", "CSCI", 2400)
-	csci_2820 = add_course("Linear Algebra with Computer Science Applications", "CSCI", 2820)
-	csci_2824 = add_course("Discrete Structures", "CSCI", 2824)
-	csci_3104 = add_course("Algorithms", "CSCI", 3104)
-	csci_3155 = add_course("Principles of Programming Languages", "CSCI", 3155)
-	csci_3308 = add_course("Software Development Methods and Tools", "CSCI", 3308)
-	csci_3753 = add_course("Operating Systems", "CSCI", 3753)
+	csci_1300 = add_course("Computer Science 1: Starting Computing", "CSCI", 1300, "http://www.colorado.edu/catalog/2015-16/courses/engr/b-csci/1300-computer-science-1-starting-computing")
+	csci_1310 = add_course("Computer Science 1: Starting Computing - Experienced", "CSCI", 1310, "http://www.colorado.edu/catalog/2015-16/courses/engr/b-csci/1310-computer-science-1-starting-computing-experienced")
+	csci_2270 = add_course("Computer Science 2: Data Structures", "CSCI", 2270, "http://www.colorado.edu/catalog/2015-16/courses/engr/b-csci/2270-computer-science-2-data-structures")
+	csci_2400 = add_course("Computer Systems", "CSCI", 2400, "http://www.colorado.edu/catalog/2015-16/courses/engr/b-csci/2400-computer-systems")
+	csci_2820 = add_course("Linear Algebra with Computer Science Applications", "CSCI", 2820, "http://www.colorado.edu/catalog/2015-16/courses/engr/b-csci/2820-linear-algebra-computer-science-applications")
+	csci_2824 = add_course("Discrete Structures", "CSCI", 2824, "http://www.colorado.edu/catalog/2015-16/courses/engr/b-csci/2824-discrete-structures")
+	csci_3104 = add_course("Algorithms", "CSCI", 3104, "http://www.colorado.edu/catalog/2015-16/courses/engr/b-csci/3104-algorithms")
+	csci_3155 = add_course("Principles of Programming Languages", "CSCI", 3155, "http://www.colorado.edu/catalog/2015-16/courses/engr/b-csci/3155-principles-programming-languages")
+	csci_3308 = add_course("Software Development Methods and Tools", "CSCI", 3308, "http://www.colorado.edu/catalog/2015-16/courses/engr/b-csci/3308-softwaredevelopment-methods-and-tools")
+	csci_3753 = add_course("Operating Systems", "CSCI", 3753, "http://www.colorado.edu/catalog/2015-16/courses/engr/b-csci/3753-operating-systems")
 
 	add_section(1300001, csci_1300, 101)
 	add_section(1300002, csci_1300, 102)
@@ -69,10 +69,11 @@ def populate():
 	add_student(900000003, "Dear", "Leader", "password123", "dearleader@colorado.edu", sample_course_list_3, "", "")
 	add_student(900000004, "Doctor", "Zoidberg", "password123", "zoidberg@colorado.edu", sample_course_list_4, "", "")
 
-def add_course(title, dept_id, course_number):
+def add_course(title, dept_id, course_number, catalog_page):
 	new_course = Course.objects.get_or_create(title = title)[0]
 	new_course.dept_id = dept_id
 	new_course.course_number = course_number
+	new_course.catalog_page = catalog_page
 
 	new_course.save()
 

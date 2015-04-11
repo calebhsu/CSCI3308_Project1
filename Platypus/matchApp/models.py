@@ -23,6 +23,7 @@ class Course(models.Model):
 	title = models.CharField(max_length=64, default="")
 	dept_id = models.CharField(max_length=4, default="")
 	course_number = models.IntegerField(default=0)
+	catalog_page = models.URLField(default="http://www.colorado.edu/catalog/2015-16/courses")
 
 	def __unicode__(self):
 		return unicode(self.title)	
