@@ -14,7 +14,10 @@ os.chdir('..')
 os.chdir('..')
 directory = os.getcwd()
 
-sys.path.append(directory)
+if directory in sys.path:
+	pass
+else:
+	sys.path.append(directory)
 ##############################################################################
 
 from matchApp.models import Course, Section, Student, User
@@ -30,17 +33,17 @@ def returnCourseList(student_id):
 		dept_id = str(queried_course.course_title.dept_id)
 		course_number = str(queried_course.course_title.course_number)
 		course_title = str(queried_course.course_title)
-		return_array.append(dept_id+course_number+"\n"+course_title+"\n")
+		return_array.append(dept_id+course_number+" - "+course_title)
 
 	return return_array
 
 
 
 
-def main():
-	for course in returnCourseList(900000001):
-		print course
+# def main():
+# 	for course in returnCourseList(900000001):
+# 		print course
 
-if __name__ == '__main__':
-	main()
+# if __name__ == '__main__':
+# 	main()
 

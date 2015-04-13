@@ -14,7 +14,10 @@ os.chdir('..')
 os.chdir('..')
 directory = os.getcwd()
 
-sys.path.append(directory)
+if directory in sys.path:
+	pass
+else:
+	sys.path.append(directory)
 ##############################################################################
 
 from matchApp.models import Course, Section, Student, User
@@ -22,13 +25,13 @@ django.setup()
 
 def returnSectionsList(student_id):
 	queried_student = Student.objects.get(user__username=student_id) #use "__" to access foreign key attributes
-	course_array = str(queried_student.course_list).split(',')
-	return course_array
+	sections_array = str(queried_student.course_list).split(',')
+	return sections_array
 
 
-def main():
-	print returnSectionsList(900000001)
+# def main():
+# 	print returnSectionsList(900000001)
 
-if __name__ == '__main__':
-	main()
+# if __name__ == '__main__':
+# 	main()
 

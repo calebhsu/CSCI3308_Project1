@@ -14,38 +14,50 @@ os.chdir('..')
 os.chdir('..')
 directory = os.getcwd()
 
-sys.path.append(directory)
+if directory in sys.path:
+	pass
+else:
+	sys.path.append(directory)
 ##############################################################################
 
 from matchApp.models import Course, Section, Student, User
 django.setup()
 
 
-#Create a hashtable that will save sections numbers as keys and arrays of enrolled students as values
-sectionsDict = {}
+def queryAndMatchSections():
+	#Create a hashtable that will save sections numbers as keys and arrays of enrolled students as values
+	sectionsDict = {}
 
-#Query all rows in Section table;
-#For each section, create an entry with the section number as the key and an empty array as the value
-for section in Section.objects.all():
-	sectionString = str(section).rstrip()
-	sectionsDict[sectionString] = []
-	
-#Query all rows in Student table; 
-#Concatenate the SID and course_list attributes of each student object, coercing return values to strings;
-#Save comma-separated entries of the concatenated string into an array;
-#For every course the student is enrolled in, add the SID to the array hashed by the dictionary
-for student in Student.objects.all():
-	sid = str(student).rstrip()
-	courseString = str(student.course_list).rstrip()
-	concatenate = sid+','+courseString
-	row = concatenate.split(',')
+	#Query all rows in Section table;
+	#For each section, create an entry with the section number as the key and an empty array as the value
+	for section in Section.objects.all():
+		sectionString = str(section).rstrip()
+		sectionsDict[sectionString] = []
+		
+	#Query all rows in Student table; 
+	#Concatenate the SID and course_list attributes of each student object, coercing return values to strings;
+	#Save comma-separated entries of the concatenated string into an array;
+	#For every course the student is enrolled in, add the SID to the array hashed by the dictionary
+	for student in Student.objects.all():
+		sid = str(student).rstrip()
+		courseString = str(student.course_list).rstrip()
+		concatenate = sid+','+courseString
+		row = concatenate.split(',')
 
-	for index in xrange(1,len(row)):
-		sectionsDict[row[index]].append(row[0])
+		for index in xrange(1,len(row)):
+			sectionsDict[row[index]].append(row[0])
 
-#################################################################################
-# For Production Code: redirect output to appropriate files in the views folder #
-for key in sectionsDict:
-	print ("Section number: "+key)
-	print ("Enrolled students: "+str(sectionsDict[key]))
-#################################################################################
+	return sectionsDict
+
+	# #################################################################################
+	# # For Production Code: redirect output to appropriate files in the views folder #
+	# for key in sectionsDict:
+	# 	print ("Section number: "+key)
+	# 	print ("Enrolled students: "+str(sectionsDict[key]))
+	# #################################################################################
+
+# def main():
+# 	queryAndMatchSections()
+
+# if __name__ == '__main__':
+# 	main()

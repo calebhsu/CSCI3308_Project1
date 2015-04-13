@@ -19,7 +19,10 @@ os.chdir('..')
 os.chdir('..')
 directory = os.getcwd()
 
-sys.path.append(directory)
+if directory in sys.path:
+	pass
+else:
+	sys.path.append(directory)
 ##############################################################################
 
 from matchApp.models import Course, Section, Student, User
