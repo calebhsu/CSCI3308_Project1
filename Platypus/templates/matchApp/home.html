@@ -35,12 +35,14 @@
                     <img src="http://cdn.flaticon.com/png/256/47119.png" style="width:200px; height:200px"/>
                 </div>
             </div>
-            <div id="testclass">
+            <div id="classnav">
+                {% if course_list %}
                 <div class="btn-group">
-                    <button type="button" class="classbutton" id="navfont">CSCI 1300 - 001</button>
-                    <button type="button" class="classbutton" id="navfont">CSCI 2270 - 001</button>
-                    <button type="button" class="classbutton" id="navfont">CSCI-2400 - 001</button>
+                    {% for course in course_list %}
+                    <button type="button" class="classbutton" id="navfont">{{ course }}</button>
+                    {% endfor %}
                 </div>
+                {% endif %}
             </div>
 
             <div id="navbar">

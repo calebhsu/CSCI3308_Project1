@@ -3,6 +3,14 @@ from django.http import HttpResponse
 from django.template import RequestContext
 from django.shortcuts import render_to_response
 
+from matchApp.models import Student, Course, Section, User
+
+##############################################################################
+# Import from child directory matchingAlgorithm
+from matchingAlgorithm.returnCourseList import returnCourseList
+##############################################################################
+
+
 def index(request):
     # Request the context of the request.
     # The context contains information such as the client's machine details, for example.
@@ -10,7 +18,7 @@ def index(request):
 
     # Construct a dictionary to pass to the template engine as its context.
     # Note the key boldmessage is the same as {{ boldmessage }} in the template!
-    context_dict = {'boldmessage': "I am bold font from the context."}
+    context_dict = {}
 
     # Return a rendered response to send to the client.
     # We make use of the shortcut function to make our lives easier.
@@ -19,7 +27,12 @@ def index(request):
 
 def home(request):
     context = RequestContext(request)
-    context_dict = {}
+
+    #obviously, we can't hard-code the user id in.
+    #When user authentication gets figured out, replace 900000001 with the user id variable
+    course_list = returnCourseList(900000001) 
+    print course_list
+    context_dict = {'course_list':course_list}
 
     return render_to_response('matchApp/home.html', context_dict, context)
 
