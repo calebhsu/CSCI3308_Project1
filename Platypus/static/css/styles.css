@@ -64,6 +64,24 @@ p {
   position: fixed;
 }
 
+/* Registration Page Layout */
+#registerBlock {
+  width: 80%;
+  height: 80%;
+  background-color: white;
+  opacity: 0.5;
+  margin-top: 2%;
+  margin-left: 8%;
+  position: fixed;
+}
+
+.customSignInForm {
+  max-width: 80%;
+  height: 60%;
+  padding: 15px;
+  margin-left: 8%;
+}
+
 /* Class Page Layout */
 #studentList {
   width: 20%;
@@ -169,6 +187,33 @@ h1, h2, h3 {
   position: fixed;
 }
 
+#registerText {
+  font-family: 'Montserrat';
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: black;
+  width: 80%;
+  height: 80%;
+  border: double black 2px;
+  margin-top: 2%;
+  margin-left: 8%;
+  position: fixed;
+}
+
+#formText {
+  font-family: 'Montserrat';
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: gray;
+  width: 50%;
+  height: 70%;
+  margin-top: 12%;
+  margin-left: 8%;
+  position: fixed;
+}
+
 #navfont {
   font-family: 'Montserrat';
   font-size: 14px;
@@ -220,6 +265,16 @@ h1, h2, h3 {
   text-transform: uppercase;
   padding-bottom: 20px;
 }
+.form-signin-message {
+  margin-bottom: 10px;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-align: left;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+}
+
 .form-signin .checkbox {
   font-weight: normal;
 }
