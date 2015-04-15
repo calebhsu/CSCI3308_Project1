@@ -1,49 +1,28 @@
 from django.db import models
 from django.contrib.auth.models import User
 # Create your models here.
-'''
-class Student(models.Model):
-		user = models.ForeignKey(User)
-		courses = models.CharField(max_length = 4, default = "")
-		
-		
-		def __unicode__(self):
-			return self.user.username
-			
-class Course(models.Model):
-	name = models.CharField(max_length = 200, default = "")
-	number = models.CharField(max_length = 4, default = "")
-	students = models.ManyToManyField(Student)
-	
-	def __unicode__(self):
-		return self.number
-'''
 
 class Course(models.Model):
-	title = models.CharField(max_length=64, default="")
-	dept_id = models.CharField(max_length=4, default="")
-	course_number = models.IntegerField(default=0)
-	catalog_page = models.URLField(default="http://www.colorado.edu/catalog/2015-16/courses")
+    title = models.CharField(max_length=64, default="")
+    dept_id = models.CharField(max_length=4, default="")
+    course_number = models.IntegerField(default=0)
+    catalog_page = models.URLField(default="http://www.colorado.edu/catalog/2015-16/courses")
 
-	def __unicode__(self):
-		return unicode(self.title)	
+    def __unicode__(self):
+        return unicode(self.title)  
 
 class Section(models.Model):
-	class_id = models.IntegerField(default=0)
-	course_title = models.ForeignKey(Course, null=True)
-	#course_title = models.CharField(max_length=64, default="")
-	section_number = models.IntegerField(default=0)
+    class_id = models.IntegerField(default=0)
+    course_title = models.ForeignKey(Course, null=True)
+    section_number = models.IntegerField(default=0)
 
-	def __unicode__(self):
-		return unicode(self.class_id)	
+    def __unicode__(self):
+        return unicode(self.class_id)   
 
 class Student(models.Model):
-	user = models.ForeignKey(User)
+    user = models.ForeignKey(User)
 
-	course_list = models.CharField(max_length=1024, default="")
+    course_list = models.CharField(max_length=1024, default="")
 
-	#view_url = models.URLField()
-	#pic_url = models.URLField()
-
-	def __unicode__(self):
-		return unicode(self.user.username) #UPDATED student now returns username, username will be assigned to student_id
+    def __unicode__(self):
+        return unicode(self.user.username) #UPDATED student now returns username, username will be assigned to student_id

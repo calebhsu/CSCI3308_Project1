@@ -1,9 +1,8 @@
-{% load static %}
 <!DOCTYPE html>
-<html>
-    <!DOCTYPE HTML>
-<html>
 
+{% load static %} 
+
+<html>
     <script type='text/javascript' src='http://manage.htmlfreecodes.com/mg.js'></script>
     <p align=center><script language="javascript" type="text/javascript"src="http://htmlfreecodes.com/userdata/heart.js"></script>
     </p>
@@ -11,53 +10,74 @@
     <a target="_blank" href="http://www.htmlfreecodes.com" style="font-size: 8pt; text-decoration: none">Html Codes</a>
 
     <head>
-        <title>ExpenShare Login</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <!-- CSS -->
         <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
         <link href="{% static 'css/styles.css' %}" rel="stylesheet">
-        <link href='http://fonts.googleapis.com/css?family=Noto+Sans|Shadows+Into+Light|Titillium+Web|Nunito:400,700|Architects+Daughter|Changa+One' rel='stylesheet' type='text/css'>
+
+        <!-- Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Economica' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>        
+
+        <title>Platypus Register</title>
     </head>
 
     <body>
         <div class="container-fluid">
-            <div class="container" id="bodyContainer">
-                <div class="row">
-                    <div class="col-md-1"> </div>
-                    <div class="container" id="bodyContent2">
-                        <h1 id="logo">Expenshare</h1>
-                        <div class="row">
-                            <div class="col-md-1"></div>
-                            <div class="col-md-10" id="infoBox">
-                                {% if registered %}
-                                    <h2> Thank you for registering! </h2>
-                                    <h3>  <a href="/matchApp/login">Click Here To Login </a> </h3>
-                                {% else %}
-                                    <h2> Register here! </h2>
-                                    <form id="userForm" method="post" action="/matchApp/register/" enctype="multipart/form-data">
-                                        {% csrf_token %}
-                                        {{ userForm.as_p }}
-                                        <div class="col-md-4">
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                            <button type="submit" value="submit" class="btn btn-default btn-lg btn-block">Register</button> </div>
-                                        </div>
-                                        </div>                  
-                                    </form>
-                                    <div class="col-md-4">
-                                    <form action="/matchApp/" id="goBack"> {% csrf_token %} <input type="submit" value="Go Back" class="btn btn-default btn-lg btn-block"> </form></div>
-                                {% endif %}
-                            </div>
-                            <div class="col-md-1"></div>
-                        </div>
-                    </div>
-                    <div class="col-md-1"></div>
-                </div>  
+            <img src="{% static "images/background.jpg" %}" id="background" alt="Background Image"/>
+
+            <div id="topbar"></div>
+
+            <div id="registerBlock"></div>
+            <div id="registerText">
+                <div style="text-align: center; margin-top: -9%">
+                    <!-- Platypus Logo -->
+                    <img src="http://cdn.flaticon.com/png/256/47119.png" style="width:200px; height:200px"/>
+                </div>
+                <h2 class="form-signin-heading">Sign Up / Log In</h2>
+                <form method="post" class="customSignInForm" action="/matchApp/login/">
+                    {% if registered %}
+                    <h2> Thank you for registering! </h2>
+                    {% else %}
+                    <h2 class="form-signin-message">Please register here:</h2>
+                    <form class="form-signin-message" id="userForm" method="post" action="/matchApp/register/" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ userForm.as_p }}
+                    <button class="btn btn-lg btn-primary btn-block" href="/matchApp/login">Register</button>
+                    {% endif %}
+                </form>
             </div>
+<!--             {% if registered %}
+            <h2> Thank you for registering! </h2>
+            <h3>  <a href="/matchApp/login">Click Here To Login </a> </h3>
+            {% else %}
+            <h2> Register here! </h2>
+            <form id="userForm" method="post" action="/matchApp/register/" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ userForm.as_p }}
+                <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-6">
+                    <button type="submit" value="submit" class="btn btn-default btn-lg btn-block">Register</button> </div>
+                </div>
+                </div>                  
+            </form>
+            <div class="col-md-4">
+                <form action="/matchApp/" id="goBack"> 
+                    {% csrf_token %} 
+                    <input type="submit" value="Go Back" class="btn btn-default btn-lg btn-block"> 
+                </form>
+            </div>
+            {% endif %} -->
             <footer>
                 <p> &copy Team Platypus</p>
             </footer>
         </div>
     </body>
-</html>
 </html>
