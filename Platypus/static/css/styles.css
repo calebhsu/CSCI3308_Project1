@@ -257,7 +257,7 @@ h1, h2, h3 {
 }
 
 .form-signin-heading {
-  margin-bottom: 10px;
+  top: 10%;
   font-family: 'Montserrat';
   font-size: 22px;
   letter-spacing: 1px;
@@ -266,13 +266,14 @@ h1, h2, h3 {
   padding-bottom: 20px;
 }
 .form-signin-message {
-  margin-bottom: 10px;
   font-family: 'Montserrat';
   font-size: 14px;
   letter-spacing: 1px;
   text-align: left;
   text-transform: uppercase;
   padding-bottom: 5px;
+  position: relative;
+  padding-top: 10px;
 }
 
 .form-signin .checkbox {
