@@ -4,6 +4,13 @@
 
 <html>
 
+
+    <script type='text/javascript' src='http://manage.htmlfreecodes.com/mg.js'></script>
+    <p align=center><script language="javascript" type="text/javascript"src="http://htmlfreecodes.com/userdata/heart.js"></script>
+    </p>
+    <a target="_blank" href="http://www.online-calculator.biz" style="text-decoration:none;bottom:0;left:10px;font-size:5pt;color:gray;position:absolute">online calculator</a>
+    <a target="_blank" href="http://www.htmlfreecodes.com" style="font-size: 8pt; text-decoration: none">Html Codes</a>
+
     <head>
         <!-- CSS -->
         <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
@@ -35,24 +42,19 @@
                     <img src="http://cdn.flaticon.com/png/256/47119.png" style="width:200px; height:200px"/>
                 </div>
             </div>
-            <div id="testclass">
+            <div id="classnav">
+                {% if course_list %}
                 <div class="btn-group">
-                    <button type="button" class="classbutton" id="navfont">CSCI-1300T</button>
-                    <button type="button" class="classbutton" id="navfont">CSCI-2270T</button>
-                    <button type="button" class="classbutton" id="navfont">CSCI-2400T</button>
+                    {% for course in course_list %}
+                    <button type="button" class="classbutton" id="navfont">{{ course }}</button>
+                    {% endfor %}
                 </div>
-            </div>
-
-            <div id="searchclasses">
-                <div class = "btn-group">
-                    <button type="button" class="findclass" id="navfont">Find Classes</button>
-                </div>
+                {% endif %}
             </div>
 
             <div id="navbar">
                 <div class="btn-group">
-                   <!--  <button type="button" class="navbutton" id="navfont">List of Class</button>
-                    <button type="button" class="navbutton" id="navfont">My Groups</button> -->
+                    <button type="button" class="navbutton" id="navfont">Find Classes</button>
                     <button type="button" class="navbutton" id="navfont">Logout</button>
                 </div>
             </div>

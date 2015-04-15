@@ -23,6 +23,7 @@ class Course(models.Model):
 	title = models.CharField(max_length=64, default="")
 	dept_id = models.CharField(max_length=4, default="")
 	course_number = models.IntegerField(default=0)
+	catalog_page = models.URLField(default="http://www.colorado.edu/catalog/2015-16/courses")
 
 	def __unicode__(self):
 		return unicode(self.title)	
@@ -37,14 +38,7 @@ class Section(models.Model):
 		return unicode(self.class_id)	
 
 class Student(models.Model):
-	student_id = models.IntegerField(default=0)
-	first_name = models.CharField(max_length=64, default="")
-	last_name = models.CharField(max_length=64, default="")
-
-	user_id = models.CharField(max_length=64, default="")
-	password = models.CharField(max_length=64, default="")
-
-	email_address = models.CharField(max_length=128, default="")
+	user = models.ForeignKey(User)
 
 	course_list = models.CharField(max_length=1024, default="")
 
@@ -52,4 +46,4 @@ class Student(models.Model):
 	#pic_url = models.URLField()
 
 	def __unicode__(self):
-		return unicode(self.student_id)
+		return unicode(self.user.username) #UPDATED student now returns username, username will be assigned to student_id

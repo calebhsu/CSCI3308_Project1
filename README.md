@@ -2,6 +2,11 @@
 
 Managing students based on academic need and extracurricular interest as the preferred social media platform of academia.
 
+Live site: http://leokim89.pythonanywhere.com/matchApp/
+
+### Contributors
+Paige Alleman, Caleb Hsu, Leo Kim, Mitchell Lewis, Tommy Wagner
+
 ## Using GitHub
 The following instructions assume the user has
 
