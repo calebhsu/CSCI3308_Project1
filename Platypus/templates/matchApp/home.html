@@ -3,8 +3,6 @@
 {% load static %} 
 
 <html>
-
-
     <script type='text/javascript' src='http://manage.htmlfreecodes.com/mg.js'></script>
     <p align=center><script language="javascript" type="text/javascript"src="http://htmlfreecodes.com/userdata/heart.js"></script>
     </p>
@@ -46,7 +44,9 @@
                 {% if course_list %}
                 <div class="btn-group">
                     {% for course in course_list %}
-                    <button type="button" class="classbutton" id="navfont">{{ course }}</button>
+                    <a href="/matchApp/classpage/">
+                        <button type="button" class="classbutton" id="navfont">{{ course }}</button>
+                    </a>
                     {% endfor %}
                 </div>
                 {% endif %}
