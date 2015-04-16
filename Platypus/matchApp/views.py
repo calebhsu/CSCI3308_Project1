@@ -48,7 +48,7 @@ def classpage(request):
     return render_to_response('matchApp/classpage.html', context_dict, context)
 
 def register(request):
-    context = RequestContext(request)
+    #context = RequestContext(request)
     # Boolean value for telling the template whether registration was successful.
     registered = False
 
@@ -64,11 +64,11 @@ def register(request):
 
             # Now we hash the password with the set_password method.
             # Once hashed, we can update the user object.
-            userData.set_password(user.password)
+            userData.set_password(userData.password)
             userData.save()
 
             # Make new account.
-            student_user = Student.save(user=userData)
+            student_user = Student(user=userData)
             student_user.save()
 
             # Tells template registration was successful
@@ -78,13 +78,13 @@ def register(request):
         # Print problems to the terminal.
         # They'll also be shown to the user.
         else:
-            pass
+            print(user_form.errors)
 
     # Not a HTTP POST, so we render our form using two ModelForm instances.
     # These forms will be blank, ready for user input.
     else:
         user_form = UserForm()
 
-    context_dict = {'userForm': user_form, 'registered': registered}
-
-    return render_to_response('matchApp/register.html', context_dict, context)
+    return render(request, 
+            'matchApp/register.html', 
+            {'user_form': user_form, 'registered': registered} )
