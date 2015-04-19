@@ -118,3 +118,9 @@ def classpage(request):
     context_dict = {}
 
     return render_to_response('matchApp/classpage.html', context_dict, context)
+
+@login_required
+def user_logout(request):
+    logout(request)
+
+    return HttpResponseRedirect('/matchApp/')
