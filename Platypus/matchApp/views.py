@@ -1,14 +1,14 @@
-from django.shortcuts import render
-from django.http import HttpResponse
+from django.shortcuts import render, render_to_response
+from django.http import HttpResponse, HttpResponseRedirect
 from django.template import RequestContext
-from django.shortcuts import render_to_response
-
-from matchApp.models import Student, Course, Section, User
-from matchApp.forms import UserForm
 
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
+
+from matchApp.models import Student, Course, Section, User
+from matchApp.forms import UserForm
+
 
 ##############################################################################
 # Import from child directory matchingAlgorithm
@@ -30,25 +30,7 @@ def index(request):
     # Note that the first parameter is the template we wish to use.
     return render_to_response('matchApp/login.html', context_dict, context)
 
-def home(request):
-    context = RequestContext(request)
-
-    #obviously, we can't hard-code the user id in.
-    #When user authentication gets figured out, replace 900000001 with the user id variable
-    course_list = returnCourseList(900000001) 
-    print(course_list)
-    context_dict = {'course_list':course_list}
-
-    return render_to_response('matchApp/home.html', context_dict, context)
-
-def classpage(request):
-    context = RequestContext(request)
-    context_dict = {}
-
-    return render_to_response('matchApp/classpage.html', context_dict, context)
-
 def register(request):
-    #context = RequestContext(request)
     # Boolean value for telling the template whether registration was successful.
     registered = False
 
@@ -88,3 +70,51 @@ def register(request):
     return render(request, 
             'matchApp/register.html', 
             {'user_form': user_form, 'registered': registered} )
+
+def user_login(request):
+    # Get relevant info if HTTP post
+    if request.method == 'POST':
+        username = request.POST.get('username')
+        password = request.POST.get('password')
+
+        # Checks if username/password combo is valid
+        user = authenticate(username=username, password=password)
+
+        # Checks if user with matching info was found
+        if user:
+            if user.is_active:
+                # If valid & active, send to homepage
+                login(request, user)
+                return HttpResponseRedirect('/matchApp/home')
+            else:
+                # An inactive account was used
+                return HttpResponse("Your account is disabled.")
+        else:
+            # Bad login details were provided
+            print("Invalid login details")
+            return HttpResponse("Invalid login details supplied.")
+
+    # The request is not a HTTP POST, so display the login form.
+    else:
+        # No context variables to pass to the template system, hence the
+        # blank dictionary object...
+        return render(request, 'matchApp/login.html', {})
+
+@login_required
+def home(request):
+    context = RequestContext(request)
+
+    #obviously, we can't hard-code the user id in.
+    #When user authentication gets figured out, replace 900000001 with the user id variable
+    course_list = returnCourseList(900000001) 
+    print(course_list)
+    context_dict = {'course_list':course_list}
+
+    return render_to_response('matchApp/home.html', context_dict, context)
+
+@login_required
+def classpage(request):
+    context = RequestContext(request)
+    context_dict = {}
+
+    return render_to_response('matchApp/classpage.html', context_dict, context)

@@ -46,14 +46,24 @@
             <div id="signIn">
                 <h2 class="form-signin-heading">Sign Up / Log In</h2>
                 <form class="form-signin" method="post" action="/matchApp/login/">
-                    <label for="inputEmail" class="sr-only">Email address</label>
+                    {% csrf_token %}
+                    <label for="inputUser" class="sr-only">Username</label>
+                    <input type="text" id="inputEmail" class="form-control" name="username" placeholder="Username" required autofocus/>
+
+                    <label for="inputPassword" class="sr-only">Password</label>
+                    <input type="password" id="inputPassword" class="form-control" name="password" placeholder="Password" required/>
+
+                    <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+                    <button class="btn btn-lg btn-primary btn-block" onClick="window.location.href='/matchApp/register/'">Sign Up!</button> 
+
+<!--                     <label for="inputEmail" class="sr-only">Email address</label>
                     <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
 
                     <label for="inputPassword" class="sr-only">Password</label>
                     <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
 
                     <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
-                    <button class="btn btn-lg btn-primary btn-block" onClick="window.location.href='/matchApp/register/'">Sign Up!</button>
+                    <button class="btn btn-lg btn-primary btn-block" onClick="window.location.href='/matchApp/register/'">Sign Up!</button> -->
                 </form>
             </div>
 
