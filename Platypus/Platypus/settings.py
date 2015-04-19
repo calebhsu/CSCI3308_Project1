@@ -96,3 +96,6 @@ TEMPLATE_DIRS = (
     # Don't forget to use absolute paths, not relative paths.
     TEMPLATE_PATH,
 )
+
+# Redirects user to login if they can't access restricted pages
+LOGIN_URL = '/matchApp/login/'
