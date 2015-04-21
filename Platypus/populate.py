@@ -64,11 +64,6 @@ def populate():
 	sample_course_list_3 = "1300002,2270002,2400003"
 	sample_course_list_4 = "1300003,2270001,2400003"
 
-	add_student(900000001, "Barack", "Obama",  "password123", "bobama@colorado.edu", sample_course_list_1,"", "")
-	add_student(900000002, "Vladimir", "Putin", "password123", "vputin@colorado.edu", sample_course_list_2, "", "")
-	add_student(900000003, "Dear", "Leader", "password123", "dearleader@colorado.edu", sample_course_list_3, "", "")
-	add_student(900000004, "Doctor", "Zoidberg", "password123", "zoidberg@colorado.edu", sample_course_list_4, "", "")
-
 def add_course(title, dept_id, course_number, catalog_page):
 	new_course = Course.objects.get_or_create(title = title)[0]
 	new_course.dept_id = dept_id
@@ -88,21 +83,17 @@ def add_section(class_id, course_title, section_number):
 
 	return new_section
 
-def add_student(student_id, first_name, last_name, password, email_address, course_list, view_url, pic_url):
+def add_student(username, first_name, last_name, password, email_address, course_list, view_url, pic_url):
 	
 	new_User = User.objects.get_or_create(email = email_address)[0]
 	new_User.first_name = first_name
 	new_User.last_name = last_name
 	new_User.password = password
-	new_User.username = student_id
+	new_User.username = username
 	new_User.save()
 	
 	new_student = Student.objects.get_or_create(user = new_User)[0] #get_or_create method returns a tuple, where element 0 is the object
-	
-	
 	new_student.course_list = course_list
-	new_student.view_url = view_url
-	new_student.pic_url = pic_url
 
 	new_student.save()
 
