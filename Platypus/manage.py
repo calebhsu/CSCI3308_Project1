@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 
-"""@package manage
+"""
 Manage.py allows the team to run the application on a local server. 
-
+Executed from the command line. 
 """
 import os
 import sys

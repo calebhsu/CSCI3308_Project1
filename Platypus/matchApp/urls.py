@@ -1,3 +1,7 @@
+""" Ensures that all pages created link together properly.
+Pages included: index, home, class page, registration page, login page, and logout screen. 
+"""
+
 from django.conf.urls import patterns, url
 from matchApp import views
 

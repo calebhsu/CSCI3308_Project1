@@ -1,8 +1,8 @@
-##############################################################################
+""" Organizes information from database according to students and their courses"""
 # Always run this block first so environmental variables are properly loaded #
 import os
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Platypus.settings')
-##############################################################################
+
 
 import sys
 import django
@@ -24,6 +24,12 @@ from matchApp.models import Course, Section, Student, User
 django.setup()
 
 def queryAndMatchCourses():
+	""" Create a hashtable that saves course numbers as keys and arrays of enrolled students as values. 
+	Query all sections in the database.
+	Save each section number from course_list string into an array.
+	Extract department ID and first four chars of section id.
+	Returns the course dictionary.
+	"""
 	#Create a hashtable that will save course numbers as keys and arrays of enrolled students as values
 	courseDict = {}
 

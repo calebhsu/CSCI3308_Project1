@@ -1,4 +1,4 @@
-"""@package populate
+"""
 Connects the information in the database to Platypus
 """
 import os
@@ -11,7 +11,11 @@ from matchApp.models import Course, Section, Student
 from matchApp.models import User
 
 def populate():
-    """ Function adds """
+    """ Add courses and sections to database, including catalog course pages.
+    Key Variables: 
+    csci_#### -- courses added 
+    sample_course_list_# -- list of sample courses with which to test the app. 
+    """
 
 	csci_1300 = add_course("Computer Science 1: Starting Computing", "CSCI", 1300, "http://www.colorado.edu/catalog/2015-16/courses/engr/b-csci/1300-computer-science-1-starting-computing")
 	csci_1310 = add_course("Computer Science 1: Starting Computing - Experienced", "CSCI", 1310, "http://www.colorado.edu/catalog/2015-16/courses/engr/b-csci/1310-computer-science-1-starting-computing-experienced")
@@ -75,7 +79,7 @@ def populate():
 	add_student(900000004, "Doctor", "Zoidberg", "password123", "zoidberg@colorado.edu", sample_course_list_4, "", "")
 
 def add_course(title, dept_id, course_number, catalog_page):
-    """ adds a new course to the database for use"""
+    """ Add a new course to the database for use"""
 	new_course = Course.objects.get_or_create(title = title)[0]
 	new_course.dept_id = dept_id
 	new_course.course_number = course_number
@@ -86,7 +90,7 @@ def add_course(title, dept_id, course_number, catalog_page):
 	return new_course
 
 def add_section(class_id, course_title, section_number):
-    """ adds a new section of a class, useful because there may be multiple sections of, say, CSCI1300 """
+    """ Add a new section of a class, useful because there may be multiple sections of, say, CSCI1300 """
 	new_section = Section.objects.get_or_create(class_id = class_id)[0]
 	new_section.course_title = course_title
 	new_section.section_number = section_number
@@ -96,7 +100,7 @@ def add_section(class_id, course_title, section_number):
 	return new_section
 
 def add_student(student_id, first_name, last_name, password, email_address, course_list, view_url, pic_url):
-    """ function that enables creation of a new user""" 
+    """ Enable creation of a new user, Return the newly added student.""" 
 	new_User = User.objects.get_or_create(email = email_address)[0]
 	new_User.first_name = first_name
 	new_User.last_name = last_name

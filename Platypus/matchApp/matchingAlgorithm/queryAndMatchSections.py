@@ -1,3 +1,4 @@
+""" Organizes information from the database according to students and their specific sections of courses."""
 ##############################################################################
 # Always run this block first so environmental variables are properly loaded #
 import os
@@ -25,6 +26,11 @@ django.setup()
 
 
 def queryAndMatchSections():
+	"""Create a hashtable that saves section numbers as keys and arrays of enrolled students as values. 
+	Querey all rows in the section and student tables. Add the student ID to to the array hashed by the directory for each course
+	in which the student is enrolled. 
+	Return a dictionary of the sections. 
+	"""
 	#Create a hashtable that will save sections numbers as keys and arrays of enrolled students as values
 	sectionsDict = {}
 
