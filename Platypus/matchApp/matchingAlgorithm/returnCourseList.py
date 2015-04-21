@@ -26,12 +26,16 @@ django.setup()
 def returnCourseList(student_id):
 	queried_student = Student.objects.get(user__username=student_id) #use "__" to access foreign key attributes
 	course_array = str(queried_student.course_list).split(',')
+	print course_array
 
 	return_array = []
 	for course in course_array:
 		queried_course = Section.objects.get(class_id=course)
+		# print queried_course
 		dept_id = str(queried_course.course_title.dept_id)
+		# print dept_id
 		course_number = str(queried_course.course_title.course_number)
+		print course_number
 		course_title = str(queried_course.course_title)
 		return_array.append(dept_id+course_number+" - "+course_title)
 
@@ -40,10 +44,10 @@ def returnCourseList(student_id):
 
 
 
-# def main():
-# 	for course in returnCourseList(900000001):
-# 		print course
+def main():
+	for course in returnCourseList("dearleader"):
+		print course
 
-# if __name__ == '__main__':
-# 	main()
+if __name__ == '__main__':
+	main()
 

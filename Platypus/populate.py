@@ -16,7 +16,6 @@ def populate():
     csci_#### -- courses added 
     sample_course_list_# -- list of sample courses with which to test the app. 
     """
-
 	csci_1300 = add_course("Computer Science 1: Starting Computing", "CSCI", 1300, "http://www.colorado.edu/catalog/2015-16/courses/engr/b-csci/1300-computer-science-1-starting-computing")
 	csci_1310 = add_course("Computer Science 1: Starting Computing - Experienced", "CSCI", 1310, "http://www.colorado.edu/catalog/2015-16/courses/engr/b-csci/1310-computer-science-1-starting-computing-experienced")
 	csci_2270 = add_course("Computer Science 2: Data Structures", "CSCI", 2270, "http://www.colorado.edu/catalog/2015-16/courses/engr/b-csci/2270-computer-science-2-data-structures")
@@ -41,8 +40,8 @@ def populate():
 	add_section(2270003, csci_2270, 103)
 
 	add_section(2400001, csci_2400, 101)
-	add_section(2400002, csci_2270, 102)
-	add_section(2400003, csci_2270, 103)
+	add_section(2400002, csci_2400, 102)
+	add_section(2400003, csci_2400, 103)
 
 	add_section(2820001, csci_2820, 101)
 	add_section(2820002, csci_2820, 102)
@@ -68,15 +67,10 @@ def populate():
 	add_section(3753002, csci_3753, 102)
 	add_section(3753003, csci_3753, 103)
 
-	sample_course_list_1 = "1300001,2270002,2400001"
-	sample_course_list_2 = "1300001,2270001,2400003"
-	sample_course_list_3 = "1300002,2270002,2400003"
-	sample_course_list_4 = "1300003,2270001,2400003"
-
-	add_student(900000001, "Barack", "Obama",  "password123", "bobama@colorado.edu", sample_course_list_1,"", "")
-	add_student(900000002, "Vladimir", "Putin", "password123", "vputin@colorado.edu", sample_course_list_2, "", "")
-	add_student(900000003, "Dear", "Leader", "password123", "dearleader@colorado.edu", sample_course_list_3, "", "")
-	add_student(900000004, "Doctor", "Zoidberg", "password123", "zoidberg@colorado.edu", sample_course_list_4, "", "")
+	# sample_course_list_1 = "1300001,2270002,2400001"
+	# sample_course_list_2 = "1300001,2270001,2400003"
+	# sample_course_list_3 = "1300002,2270002,2400003"
+	# sample_course_list_4 = "1300003,2270001,2400003"
 
 def add_course(title, dept_id, course_number, catalog_page):
     """ Add a new course to the database for use"""
@@ -98,22 +92,18 @@ def add_section(class_id, course_title, section_number):
 	new_section.save()
 
 	return new_section
-
+	
 def add_student(student_id, first_name, last_name, password, email_address, course_list, view_url, pic_url):
     """ Enable creation of a new user, Return the newly added student.""" 
 	new_User = User.objects.get_or_create(email = email_address)[0]
 	new_User.first_name = first_name
 	new_User.last_name = last_name
 	new_User.password = password
-	new_User.username = student_id
+	new_User.username = username
 	new_User.save()
 	
 	new_student = Student.objects.get_or_create(user = new_User)[0] #get_or_create method returns a tuple, where element 0 is the object
-	
-	
 	new_student.course_list = course_list
-	new_student.view_url = view_url
-	new_student.pic_url = pic_url
 
 	new_student.save()
 

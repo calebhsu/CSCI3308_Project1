@@ -114,9 +114,11 @@ def home(request):
     """Render the specific home page of the user that logs in."""
     context = RequestContext(request)
 
+    user = request.user
+    print user.username
     #obviously, we can't hard-code the user id in.
     #When user authentication gets figured out, replace 900000001 with the user id variable
-    course_list = returnCourseList(900000001) 
+    course_list = returnCourseList(user.username) 
     print(course_list)
     context_dict = {'course_list':course_list}
 
