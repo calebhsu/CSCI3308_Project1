@@ -32,8 +32,8 @@ def populate():
 	add_section(2270003, csci_2270, 103)
 
 	add_section(2400001, csci_2400, 101)
-	add_section(2400002, csci_2270, 102)
-	add_section(2400003, csci_2270, 103)
+	add_section(2400002, csci_2400, 102)
+	add_section(2400003, csci_2400, 103)
 
 	add_section(2820001, csci_2820, 101)
 	add_section(2820002, csci_2820, 102)
