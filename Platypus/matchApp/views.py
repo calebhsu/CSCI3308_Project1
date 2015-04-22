@@ -1,3 +1,6 @@
+"""
+Basic functionality of the application, including login and user authentication. 
+"""
 from django.shortcuts import render, render_to_response
 from django.http import HttpResponse, HttpResponseRedirect
 from django.template import RequestContext
@@ -10,13 +13,17 @@ from matchApp.models import Student, Course, Section, User
 from matchApp.forms import UserForm
 
 
-##############################################################################
 # Import from child directory matchingAlgorithm
+""" import matching algorithm from child directory"""
 from matchApp.matchingAlgorithm.returnCourseList import returnCourseList
-##############################################################################
+
 
 
 def index(request):
+    """ Request context of request. Context contains information such as client's machine details. 
+    Construct dictionary to pass context to the templates, so that the correct page renders.
+    Return rendered response to send to client. 
+    """
     # Request the context of the request.
     # The context contains information such as the client's machine details, for example.
     context = RequestContext(request)
@@ -31,6 +38,7 @@ def index(request):
     return render_to_response('matchApp/login.html', context_dict, context)
 
 def register(request):
+    """ Boolean value checks to see if registration was sucessful by the user."""
     # Boolean value for telling the template whether registration was successful.
     registered = False
 
@@ -72,6 +80,7 @@ def register(request):
             {'user_form': user_form, 'registered': registered} )
 
 def user_login(request):
+    """ Determines activity level of the user and reacts accordingly to correct/incorrect login information."""
     # Get relevant info if HTTP post
     if request.method == 'POST':
         username = request.POST.get('username')
@@ -102,6 +111,7 @@ def user_login(request):
 
 @login_required
 def home(request):
+    """Render the specific home page of the user that logs in."""
     context = RequestContext(request)
 
     user = request.user
@@ -116,6 +126,7 @@ def home(request):
 
 @login_required
 def classpage(request):
+    """Render the specific class page of the user that logs in."""
     context = RequestContext(request)
     context_dict = {}
 
@@ -123,6 +134,7 @@ def classpage(request):
 
 @login_required
 def user_logout(request):
+    """Allow user to exit application and log out. Returns to login screen."""
     logout(request)
 
     return HttpResponseRedirect('/matchApp/')
