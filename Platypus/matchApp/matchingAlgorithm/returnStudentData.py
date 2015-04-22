@@ -1,17 +1,16 @@
 """ Gets the specific data associated with a student user, i.e. a username, name, and email. 
 """
 
-##############################################################################
-# Always run this block first so environmental variables are properly loaded #
+
+# Always run this block first so environmental variables are properly loaded
 import os
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Platypus.settings')
-##############################################################################
 
 import sys
 import django
 
-##############################################################################
-# Append parent of the parent directory for cwd to system path               #
+
+# Append parent of the parent directory for cwd to system path    
 os.getcwd()
 os.chdir('..')
 os.chdir('..')
@@ -21,18 +20,15 @@ if directory in sys.path:
 	pass
 else:
 	sys.path.append(directory)
-##############################################################################
 
 from matchApp.models import Course, Section, Student, User
 django.setup()
 
-##############################################################################
+
 # The contents of this function will be highly variable, and must be tailored
 # to the actual content needed by the HTML coders. For now, include all the
 # functionality that might be needed, and comment out. 
 # Uncomment required fields later as needed by the HTML/front-end team.
-# 
-##############################################################################
 
 def returnStudentData(student_id):
 	"""Find information associated with a student user. 
@@ -49,8 +45,3 @@ def returnStudentData(student_id):
 
 	return queried_student
 
-# def main():
-# 	returnStudentData(900000001)
-
-# if __name__ == '__main__':
-# 	main()

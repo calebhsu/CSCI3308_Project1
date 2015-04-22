@@ -67,11 +67,7 @@ def populate():
 	add_section(3753002, csci_3753, 102)
 	add_section(3753003, csci_3753, 103)
 
-	# sample_course_list_1 = "1300001,2270002,2400001"
-	# sample_course_list_2 = "1300001,2270001,2400003"
-	# sample_course_list_3 = "1300002,2270002,2400003"
-	# sample_course_list_4 = "1300003,2270001,2400003"
-
+	
 def add_course(title, dept_id, course_number, catalog_page):
     """ Add a new course to the database for use"""
 	new_course = Course.objects.get_or_create(title = title)[0]
