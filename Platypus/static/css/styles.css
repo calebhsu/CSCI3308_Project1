@@ -160,6 +160,17 @@ h1, h2, h3 {
   letter-spacing: 0.15em;
 }
 
+.subtitle {
+  text-align: center;
+}
+
+.signup {
+  top: 20%;
+  left: 44%;
+  text-align: center;
+  position: fixed;
+}
+
 .desc {
   text-align: center;
 }
@@ -264,6 +275,7 @@ h1, h2, h3 {
   text-align: center;
   text-transform: uppercase;
   padding-bottom: 20px;
+  position: relative;
 }
 .form-signin-message {
   font-family: 'Montserrat';
