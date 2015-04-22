@@ -1,5 +1,6 @@
 """
-Basic functionality of the application, including login and user authentication. 
+Basic functionality of the application, including login and user authentication. Each view handles 
+
 """
 from django.shortcuts import render, render_to_response
 from django.http import HttpResponse, HttpResponseRedirect

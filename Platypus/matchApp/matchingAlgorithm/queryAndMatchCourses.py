@@ -7,7 +7,6 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Platypus.settings')
 import sys
 import django
 
-##############################################################################
 # Append parent of the parent directory for cwd to system path               #
 os.getcwd()
 os.chdir('..')
@@ -18,7 +17,7 @@ if directory in sys.path:
 	pass
 else:
 	sys.path.append(directory)
-##############################################################################
+
 
 from matchApp.models import Course, Section, Student, User
 django.setup()
@@ -62,12 +61,12 @@ def queryAndMatchCourses():
 
 	return courseDict
 
-	# #################################################################################
+
 	# # For Production Code: redirect output to appropriate files in the views folder #
 	# for key in courseDict:
 	# 	print ("Course ID: "+key)
 	# 	print ("Enrolled students: "+str(courseDict[key]))
-	# #################################################################################
+
 
 # def main():
 # 	queryAndMatchCourses()

@@ -1,15 +1,12 @@
 """ Organizes information from the database according to students and their specific sections of courses."""
-##############################################################################
 # Always run this block first so environmental variables are properly loaded #
 import os
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Platypus.settings')
-##############################################################################
 
 import sys
 import django
 
-##############################################################################
-# Append parent of the parent directory for cwd to system path               #
+# Append parent of the parent directory for cwd to system path 
 os.getcwd()
 os.chdir('..')
 os.chdir('..')
@@ -19,7 +16,6 @@ if directory in sys.path:
 	pass
 else:
 	sys.path.append(directory)
-##############################################################################
 
 from matchApp.models import Course, Section, Student, User
 django.setup()
@@ -55,12 +51,10 @@ def queryAndMatchSections():
 
 	return sectionsDict
 
-	# #################################################################################
-	# # For Production Code: redirect output to appropriate files in the views folder #
+	# # For Production Code: redirect output to appropriate files in the views folder 
 	# for key in sectionsDict:
 	# 	print ("Section number: "+key)
 	# 	print ("Enrolled students: "+str(sectionsDict[key]))
-	# #################################################################################
 
 # def main():
 # 	queryAndMatchSections()
