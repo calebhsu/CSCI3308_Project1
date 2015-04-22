@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 {% load static %} 
+{% load dict_helper%}
 
 <html>
 
@@ -50,16 +51,37 @@
 
             <div id="studentList"></div>
             <div id="studentListHeader">
-                <h1 class="title">Student</h1>
+                <h1 class="title">Matches By Course</h1>
                 <p class="title">--------------------</p>
-                <p class="desc">Your fellow students here.</p>
+                {% for course in course_dict%}
+                    {{course}}<br>
+                    {% for student in course_dict|key:course %}
+                        <b>{{student}}</b>
+                        {% if student in student_dict %}
+                        {{student_dict|key:student}}
+                        {%endif%}<br>
+                    {%endfor%}<br>
+
+                {% endfor %}
             </div>
 
             <div id="groupList"></div>
             <div id="groupListHeader">
-                <h1 class="title">Your Group</h1>
+                <h1 class="title">Matches By Section</h1>
                 <p class="title">--------------------</p>
-                <p class="desc">Your groupmates here.</p>
+                {% for section in sections_dict %}
+                    Section: {{ section }}<br>
+                    Matches:
+                    {% for student in sections_dict|key:section %}
+                        <b>{{student}}</b>
+                        {% if student in student_dict %}
+                        {{student_dict|key:student}}
+                        {%endif%}
+
+                    {% empty %}
+                        None      
+                    {%endfor%}<br>
+                {% endfor %}
             </div>
     </body>
 </html>

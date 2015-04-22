@@ -16,7 +16,8 @@ from matchApp.forms import UserForm
 # Import from child directory matchingAlgorithm
 """ import matching algorithm from child directory"""
 from matchApp.matchingAlgorithm.returnCourseList import returnCourseList
-
+from matchApp.matchingAlgorithm.returnMatchesByCourse import returnMatchesByCourse
+from matchApp.matchingAlgorithm.returnMatchesBySection  import returnMatchesBySection
 
 
 def index(request):
@@ -128,7 +129,16 @@ def home(request):
 def classpage(request):
     """Render the specific class page of the user that logs in."""
     context = RequestContext(request)
-    context_dict = {}
+
+    user = request.user
+    course_dict = returnMatchesByCourse(user.username)
+    sections_dict = returnMatchesBySection(user.username)
+
+    student_dict = {}
+    for student in Student.objects.all():
+        student_dict[student.user.username]=student.user.email
+
+    context_dict = {'course_dict':course_dict, 'sections_dict':sections_dict, 'student_dict':student_dict}
 
     return render_to_response('matchApp/classpage.html', context_dict, context)
 
