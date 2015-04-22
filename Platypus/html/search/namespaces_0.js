@@ -1,0 +1,23 @@
+var searchData=
+[
+  ['addcourse',['addCourse',['../namespacematch_app_1_1matching_algorithm_1_1add_course.html',1,'matchApp::matchingAlgorithm']]],
+  ['admin',['admin',['../namespacematch_app_1_1admin.html',1,'matchApp']]],
+  ['dict_5fhelper',['dict_helper',['../namespacematch_app_1_1templatetags_1_1dict__helper.html',1,'matchApp::templatetags']]],
+  ['forms',['forms',['../namespacematch_app_1_1forms.html',1,'matchApp']]],
+  ['manage',['manage',['../namespacemanage.html',1,'']]],
+  ['matchapp',['matchApp',['../namespacematch_app.html',1,'']]],
+  ['matchingalgorithm',['matchingAlgorithm',['../namespacematch_app_1_1matching_algorithm.html',1,'matchApp']]],
+  ['models',['models',['../namespacematch_app_1_1models.html',1,'matchApp']]],
+  ['queryandmatchcourses',['queryAndMatchCourses',['../namespacematch_app_1_1matching_algorithm_1_1query_and_match_courses.html',1,'matchApp::matchingAlgorithm']]],
+  ['queryandmatchsections',['queryAndMatchSections',['../namespacematch_app_1_1matching_algorithm_1_1query_and_match_sections.html',1,'matchApp::matchingAlgorithm']]],
+  ['removecourse',['removeCourse',['../namespacematch_app_1_1matching_algorithm_1_1remove_course.html',1,'matchApp::matchingAlgorithm']]],
+  ['returncourselist',['returnCourseList',['../namespacematch_app_1_1matching_algorithm_1_1return_course_list.html',1,'matchApp::matchingAlgorithm']]],
+  ['returnmatchesbycourse',['returnMatchesByCourse',['../namespacematch_app_1_1matching_algorithm_1_1return_matches_by_course.html',1,'matchApp::matchingAlgorithm']]],
+  ['returnmatchesbysection',['returnMatchesBySection',['../namespacematch_app_1_1matching_algorithm_1_1return_matches_by_section.html',1,'matchApp::matchingAlgorithm']]],
+  ['returnsectionslist',['returnSectionsList',['../namespacematch_app_1_1matching_algorithm_1_1return_sections_list.html',1,'matchApp::matchingAlgorithm']]],
+  ['returnstudentdata',['returnStudentData',['../namespacematch_app_1_1matching_algorithm_1_1return_student_data.html',1,'matchApp::matchingAlgorithm']]],
+  ['templatetags',['templatetags',['../namespacematch_app_1_1templatetags.html',1,'matchApp']]],
+  ['tests',['tests',['../namespacematch_app_1_1tests.html',1,'matchApp']]],
+  ['urls',['urls',['../namespacematch_app_1_1urls.html',1,'matchApp']]],
+  ['views',['views',['../namespacematch_app_1_1views.html',1,'matchApp']]]
+];

@@ -1,0 +1,25 @@
+var settings_8py =
+[
+    [ "ALLOWED_HOSTS", "settings_8py.html#acef7d412cd11e277899731742228d304", null ],
+    [ "BASE_DIR", "settings_8py.html#ab0d13a750bebbc2d9e19f32adc2ff749", null ],
+    [ "DATABASES", "settings_8py.html#a52c253859b1798aee0972f29f3c94f00", null ],
+    [ "DEBUG", "settings_8py.html#a805959f406c1ab783912dca1bf4f9b4d", null ],
+    [ "INSTALLED_APPS", "settings_8py.html#a987c3c31e79426162bba4a525f150839", null ],
+    [ "LANGUAGE_CODE", "settings_8py.html#a0cb66ded6846c00b50227be07adf9ace", null ],
+    [ "MIDDLEWARE_CLASSES", "settings_8py.html#acb5170bcce1c81463df5170c9e53b4e3", null ],
+    [ "PROJECT_PATH", "settings_8py.html#abe93a21756340e9e7fdc8c80db00735e", null ],
+    [ "ROOT_URLCONF", "settings_8py.html#a79c6cca950bb10c5d935bcba5682eeee", null ],
+    [ "SECRET_KEY", "settings_8py.html#a6de75307b3f4b09382a818ec2e7bc731", null ],
+    [ "SETTINGS_DIR", "settings_8py.html#ae0eb1680d14f9e1e34ff29544b80a603", null ],
+    [ "STATIC_PATH", "settings_8py.html#a4e4df2249902ab91d805e7b783222b14", null ],
+    [ "STATIC_URL", "settings_8py.html#a6ccc40e5617a0f11b6912e3b69e8c0c1", null ],
+    [ "STATICFILES_DIRS", "settings_8py.html#a57cbf107a021ecf8c4ef636af09fd903", null ],
+    [ "TEMPLATE_DEBUG", "settings_8py.html#aa8974c188a16969cc612e68b0a562931", null ],
+    [ "TEMPLATE_DIRS", "settings_8py.html#ab156d619697e9ec9f9d435032956bc2c", null ],
+    [ "TEMPLATE_PATH", "settings_8py.html#a93b2183481fb052a19a3aca12a9a6bea", null ],
+    [ "TIME_ZONE", "settings_8py.html#aca87dae3dacd633f793eac09d3e200fe", null ],
+    [ "USE_I18N", "settings_8py.html#a90000f621e26aafdbb06eaada0a13187", null ],
+    [ "USE_L10N", "settings_8py.html#afb4e4d80e8b9dcad6c91f66a318ee09b", null ],
+    [ "USE_TZ", "settings_8py.html#ab1904f519eab28d99dbfc50f116c7b33", null ],
+    [ "WSGI_APPLICATION", "settings_8py.html#a932d82b584a8d3acfd7f96e431a8bdcf", null ]
+];

@@ -1,0 +1,70 @@
+\section{populate Namespace Reference}
+\label{namespacepopulate}\index{populate@{populate}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def {\bf populate} ()
+\item 
+def {\bf add\+\_\+course} (title, dept\+\_\+id, course\+\_\+number, catalog\+\_\+page)
+\item 
+def {\bf add\+\_\+section} (class\+\_\+id, course\+\_\+title, section\+\_\+number)
+\item 
+def {\bf add\+\_\+student} (student\+\_\+id, first\+\_\+name, last\+\_\+name, password, email\+\_\+address, course\+\_\+list, view\+\_\+url, pic\+\_\+url)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Test file for connecting information in the databse to Platypus
+\end{DoxyVerb}
+ 
+
+\subsection{Function Documentation}
+\index{populate@{populate}!add\+\_\+course@{add\+\_\+course}}
+\index{add\+\_\+course@{add\+\_\+course}!populate@{populate}}
+\subsubsection[{add\+\_\+course}]{\setlength{\rightskip}{0pt plus 5cm}def populate.\+add\+\_\+course (
+\begin{DoxyParamCaption}
+\item[{}]{title, }
+\item[{}]{dept\+\_\+id, }
+\item[{}]{course\+\_\+number, }
+\item[{}]{catalog\+\_\+page}
+\end{DoxyParamCaption}
+)}\label{namespacepopulate_a3911fe27a72bb42fd491660bc178d9fc}
+\begin{DoxyVerb}Add a new course to the database for use\end{DoxyVerb}
+ \index{populate@{populate}!add\+\_\+section@{add\+\_\+section}}
+\index{add\+\_\+section@{add\+\_\+section}!populate@{populate}}
+\subsubsection[{add\+\_\+section}]{\setlength{\rightskip}{0pt plus 5cm}def populate.\+add\+\_\+section (
+\begin{DoxyParamCaption}
+\item[{}]{class\+\_\+id, }
+\item[{}]{course\+\_\+title, }
+\item[{}]{section\+\_\+number}
+\end{DoxyParamCaption}
+)}\label{namespacepopulate_a91a206e930a3da42760c4a4eecceaff4}
+\begin{DoxyVerb}Add a new section of a class, useful because there may be multiple sections of, say, CSCI1300 \end{DoxyVerb}
+ \index{populate@{populate}!add\+\_\+student@{add\+\_\+student}}
+\index{add\+\_\+student@{add\+\_\+student}!populate@{populate}}
+\subsubsection[{add\+\_\+student}]{\setlength{\rightskip}{0pt plus 5cm}def populate.\+add\+\_\+student (
+\begin{DoxyParamCaption}
+\item[{}]{student\+\_\+id, }
+\item[{}]{first\+\_\+name, }
+\item[{}]{last\+\_\+name, }
+\item[{}]{password, }
+\item[{}]{email\+\_\+address, }
+\item[{}]{course\+\_\+list, }
+\item[{}]{view\+\_\+url, }
+\item[{}]{pic\+\_\+url}
+\end{DoxyParamCaption}
+)}\label{namespacepopulate_a141823eaf8713ca3a26c2294d26ac9e6}
+\begin{DoxyVerb}Enable creation of a new user, Return the newly added student.\end{DoxyVerb}
+ \index{populate@{populate}!populate@{populate}}
+\index{populate@{populate}!populate@{populate}}
+\subsubsection[{populate}]{\setlength{\rightskip}{0pt plus 5cm}def populate.\+populate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{namespacepopulate_a7053644040721963205931ca98c66392}
+\begin{DoxyVerb}Add courses and sections to database, including catalog course pages.
+Key Variables: 
+csci_#### -- courses added 
+sample_course_list_# -- list of sample courses with which to test the app. 
+\end{DoxyVerb}
+ 

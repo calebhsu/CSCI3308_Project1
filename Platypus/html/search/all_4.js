@@ -1,0 +1,12 @@
+var searchData=
+[
+  ['d',['d',['../bootstrap_8min_8js.html#aeb337d295abaddb5ec3cb34cc2e2bbc9',1,'bootstrap.min.js']]],
+  ['databases',['DATABASES',['../namespace_platypus_1_1settings.html#a52c253859b1798aee0972f29f3c94f00',1,'Platypus::settings']]],
+  ['debug',['DEBUG',['../namespace_platypus_1_1settings.html#a805959f406c1ab783912dca1bf4f9b4d',1,'Platypus::settings']]],
+  ['defaults',['DEFAULTS',['../bootstrap_8min_8js.html#a6c1cf0be5e5383617ddc5efdfdc8c651',1,'bootstrap.min.js']]],
+  ['dept_5fid',['dept_id',['../classmatch_app_1_1models_1_1_course.html#a1ed41be5dd960488ff6fe01eb27074f0',1,'matchApp::models::Course']]],
+  ['dict_5fhelper_2epy',['dict_helper.py',['../dict__helper_8py.html',1,'']]],
+  ['directory',['directory',['../namespacematch_app_1_1matching_algorithm_1_1add_course.html#a6e7c3f074c5f1319de59da69820f345d',1,'matchApp.matchingAlgorithm.addCourse.directory()'],['../namespacematch_app_1_1matching_algorithm_1_1query_and_match_courses.html#a0bd38294da3bda8051731c034f1de149',1,'matchApp.matchingAlgorithm.queryAndMatchCourses.directory()'],['../namespacematch_app_1_1matching_algorithm_1_1query_and_match_sections.html#a1fb8589712b684c335ad24e499b445fa',1,'matchApp.matchingAlgorithm.queryAndMatchSections.directory()'],['../namespacematch_app_1_1matching_algorithm_1_1remove_course.html#a237ee35261564a309048c0accda15623',1,'matchApp.matchingAlgorithm.removeCourse.directory()'],['../namespacematch_app_1_1matching_algorithm_1_1return_course_list.html#a12ca8c76c90025f5c4603f02d4fb0c70',1,'matchApp.matchingAlgorithm.returnCourseList.directory()'],['../namespacematch_app_1_1matching_algorithm_1_1return_matches_by_course.html#afbaeb47c873756408e671b4f031bb922',1,'matchApp.matchingAlgorithm.returnMatchesByCourse.directory()'],['../namespacematch_app_1_1matching_algorithm_1_1return_matches_by_section.html#ae91ce4701feda170cf881dfdea9d4fc6',1,'matchApp.matchingAlgorithm.returnMatchesBySection.directory()'],['../namespacematch_app_1_1matching_algorithm_1_1return_sections_list.html#afc15733dc8e15c6878954647aa9c4428',1,'matchApp.matchingAlgorithm.returnSectionsList.directory()'],['../namespacematch_app_1_1matching_algorithm_1_1return_student_data.html#ab2cef55c1c53d129afdc745b17bfdb6c',1,'matchApp.matchingAlgorithm.returnStudentData.directory()']]],
+  ['dismiss',['dismiss',['../bootstrap_8js.html#a5a23b6797090169c0f80e3372ca76a4d',1,'bootstrap.js']]],
+  ['dynsections_2ejs',['dynsections.js',['../dynsections_8js.html',1,'']]]
+];
