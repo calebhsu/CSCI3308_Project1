@@ -115,7 +115,7 @@ def home(request):
     context = RequestContext(request)
 
     user = request.user
-    print user.username
+    print(user.username)
     course_list = returnCourseList(user.username) 
     print(course_list)
     context_dict = {'course_list':course_list}
