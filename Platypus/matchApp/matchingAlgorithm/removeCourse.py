@@ -42,7 +42,7 @@ def removeCourse(student_id, section_id):
 		course_array.remove(section_id)
 
 	else:
-		print "Course is not in list of registered sections"
+		print("Course is not in list of registered sections")
 
 	course_list = ""
 	for course in course_array:

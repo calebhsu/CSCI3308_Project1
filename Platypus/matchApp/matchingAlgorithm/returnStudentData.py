@@ -39,9 +39,8 @@ def returnStudentData(student_id):
 	name = str(queried_student.user.first_name)+" "+str(queried_student.user.last_name)
 	email = queried_student.user.email
 
-	print "Username:\t"+username
-	print "Name:\t\t"+name
-	print "Email:\t\t"+email+"\n"
+	print("Username:\t"+username)
+	print("Name:\t\t"+name)
+	print("Email:\t\t"+email+"\n")
 
 	return queried_student
-

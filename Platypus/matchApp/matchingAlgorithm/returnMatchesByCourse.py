@@ -7,11 +7,11 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Platypus.settings')
 
 import sys
 import django
-from queryAndMatchSections import queryAndMatchSections
-from queryAndMatchCourses import queryAndMatchCourses
-from returnCourseList import returnCourseList
-from returnSectionsList import returnSectionsList
-from returnStudentData	import returnStudentData
+from matchApp.matchingAlgorithm.queryAndMatchSections import queryAndMatchSections
+from matchApp.matchingAlgorithm.queryAndMatchCourses import queryAndMatchCourses
+from matchApp.matchingAlgorithm.returnCourseList import returnCourseList
+from matchApp.matchingAlgorithm.returnSectionsList import returnSectionsList
+from matchApp.matchingAlgorithm.returnStudentData import returnStudentData
 
 
 # Append parent of the parent directory for cwd to system path          
