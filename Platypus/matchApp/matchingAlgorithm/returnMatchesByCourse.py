@@ -33,24 +33,36 @@ def returnMatchesByCourse(student_id):
 
 	course_dict = queryAndMatchCourses()
 
-	for course in course_list:
-		course_id = course[0:8]
-		#print course_title
-		#if no matches found (i.e. returned list of matches contains only the queried user)
-		if course_dict[course_id] == [str(student_id)]: 
-			print "No matches found for course "+str(course)+"."
+	# for course in course_list:
+	# 	course_id = course[0:8]
+	# 	#print course_title
+	# 	#if no matches found (i.e. returned list of matches contains only the queried user)
+	# 	if course_dict[course_id] == [str(student_id)]: 
+	# 		print "No matches found for course "+str(course)+"."
 
-		else:
-			print "Matches for:\n"+str(course)
+	# 	else:
+	# 		print "Matches for:\n"+str(course)
 
-		for matched_student in course_dict[course_id]:
-			if matched_student != str(student_id): #don't list yourself, obviously.
-				returnStudentData(matched_student)
+	# 	for matched_student in course_dict[course_id]:
+	# 		if matched_student != str(student_id): #don't list yourself, obviously.
+	# 			returnStudentData(matched_student)
+
+	return_dict = {}
+
+	for course in course_dict:
+		if student_id in course_dict[course]:
+			course_dict[course].remove(student_id)
+			return_dict[course] = course_dict[course]
+
+	# print return_dict
+
+	#key: course; value: student
+	return return_dict
 
 
-# def main():
-# 	returnMatchesByCourse(900000001)
+def main():
+	returnMatchesByCourse('bobama')
 
-# if __name__ == '__main__':
-# 	main()
+if __name__ == '__main__':
+	main()
 	

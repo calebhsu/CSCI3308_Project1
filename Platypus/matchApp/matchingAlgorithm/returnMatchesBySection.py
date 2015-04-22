@@ -33,17 +33,27 @@ def returnMatchesBySection(student_id):
 
 	sections_dict = queryAndMatchSections()
 
-	for section in sections_list:
-		#if no matches found (i.e. returned list of matches contains only the queried user)
-		if sections_dict[section] == [str(student_id)]: 
-			print "No matches found for section "+str(section)+"."
+	# for section in sections_list:
+	# 	#if no matches found (i.e. returned list of matches contains only the queried user)
+	# 	if sections_dict[section] == [str(student_id)]: 
+	# 		print "No matches found for section "+str(section)+"."
 
-		else:
-			print "Matches for section "+str(section)+":"
+	# 	else:
+	# 		print "Matches for section "+str(section)+":"
 
-		for matched_student in sections_dict[section]:
-			if matched_student != str(student_id): #don't list yourself, obviously.
-				returnStudentData(matched_student)
+	# 	for matched_student in sections_dict[section]:
+	# 		if matched_student != str(student_id): #don't list yourself, obviously.
+	# 			returnStudentData(matched_student)
+	return_dict = {}
+
+	for section in sections_dict:
+		if student_id in sections_dict[section]:
+			sections_dict[section].remove(student_id)
+			return_dict[section] = sections_dict[section]
+			# if return_dict[] == {}:
+			# 	return_dict["No Matches Found" = "No Matches Found"]
+
+	return return_dict
 
 
 # def main():
