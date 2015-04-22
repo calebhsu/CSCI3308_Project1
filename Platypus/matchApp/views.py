@@ -26,15 +26,14 @@ def index(request):
     Construct dictionary to pass context to the templates, so that the correct page renders.
     Return rendered response to send to client. 
     """
-    # Request the context of the request.
-    # The context contains information such as the client's machine details, for example.
+   
     context = RequestContext(request)
 
-    # Construct a dictionary to pass to the template engine as its context.
+    .
     # Note the key boldmessage is the same as {{ boldmessage }} in the template!
     context_dict = {}
 
-    # Return a rendered response to send to the client.
+    
     # We make use of the shortcut function to make our lives easier.
     # Note that the first parameter is the template we wish to use.
     return render_to_response('matchApp/login.html', context_dict, context)
@@ -118,8 +117,6 @@ def home(request):
 
     user = request.user
     print user.username
-    #obviously, we can't hard-code the user id in.
-    #When user authentication gets figured out, replace 900000001 with the user id variable
     course_list = returnCourseList(user.username) 
     print(course_list)
     context_dict = {'course_list':course_list}

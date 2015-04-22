@@ -2,11 +2,11 @@
 are enrolled in. I.e. the matched students are in the same lecture"""
 
 
-##############################################################################
-# Always run this block first so environmental variables are properly loaded #
+
+# Always run this block first so environmental variables are properly loaded 
 import os
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Platypus.settings')
-##############################################################################
+
 
 import sys
 import django
@@ -16,8 +16,8 @@ from returnCourseList import returnCourseList
 from returnSectionsList import returnSectionsList
 from returnStudentData	import returnStudentData
 
-##############################################################################
-# Append parent of the parent directory for cwd to system path               #
+
+# Append parent of the parent directory for cwd to system path               
 os.getcwd()
 os.chdir('..')
 os.chdir('..')
@@ -27,7 +27,7 @@ if directory in sys.path:
 	pass
 else:
 	sys.path.append(directory)
-##############################################################################
+
 
 from matchApp.models import Course, Section, Student, User
 django.setup()
@@ -57,15 +57,9 @@ def returnMatchesBySection(student_id):
 		if student_id in sections_dict[section]:
 			sections_dict[section].remove(student_id)
 			return_dict[section] = sections_dict[section]
-			# if return_dict[] == {}:
-			# 	return_dict["No Matches Found" = "No Matches Found"]
+			
 
 	return return_dict
 
 
-# def main():
-# 	returnMatchesBySection(900000001)
 
-# if __name__ == '__main__':
-# 	main()
-	

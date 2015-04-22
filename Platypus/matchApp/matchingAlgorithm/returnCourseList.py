@@ -1,16 +1,15 @@
 """Returns the course list of a specific student. 
 """
 
-##############################################################################
-# Always run this block first so environmental variables are properly loaded #
+
+# Always run this block first so environmental variables are properly loaded 
 import os
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Platypus.settings')
-##############################################################################
 
 import sys
 import django
 
-##############################################################################
+
 # Append parent of the parent directory for cwd to system path               #
 os.getcwd()
 os.chdir('..')
@@ -21,7 +20,7 @@ if directory in sys.path:
 	pass
 else:
 	sys.path.append(directory)
-##############################################################################
+	
 
 from matchApp.models import Course, Section, Student, User
 django.setup()
