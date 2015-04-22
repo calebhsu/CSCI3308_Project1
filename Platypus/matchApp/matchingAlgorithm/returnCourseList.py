@@ -1,3 +1,6 @@
+"""Returns the course list of a specific student. 
+"""
+
 ##############################################################################
 # Always run this block first so environmental variables are properly loaded #
 import os
@@ -24,6 +27,9 @@ from matchApp.models import Course, Section, Student, User
 django.setup()
 
 def returnCourseList(student_id):
+	""" Queries the database for information about a specific student. 
+	Arguments: Student_id 
+	Returns the course list for that student"""
 	queried_student = Student.objects.get(user__username=student_id) #use "__" to access foreign key attributes
 	course_array = str(queried_student.course_list).split(',')
 	print course_array

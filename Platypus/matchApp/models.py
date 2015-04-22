@@ -1,6 +1,7 @@
-"""
-Contains information about the various classes used in Platypus
-"""
+##
+# @file models.py 
+# @brief Django models organizes classes used for the application. 
+# 
 
 from django.db import models
 from django.contrib.auth.models import User

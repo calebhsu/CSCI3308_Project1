@@ -1,3 +1,5 @@
+"""Allows a student to remove a course from their course list"""
+
 ##############################################################################
 # Always run this block first so environmental variables are properly loaded #
 import os
@@ -29,6 +31,9 @@ from matchApp.models import Course, Section, Student, User
 django.setup()
 
 def removeCourse(student_id, section_id):
+	""" Remove a course from a students course list. 
+	Arguments: student_id, section_id of course to be removed.
+	Saves the altered couse list. """
 	student = Student.objects.get(user__username=student_id)
 	course_list = str(student.course_list)
 

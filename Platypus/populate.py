@@ -1,5 +1,5 @@
 """
-Connects the information in the database to Platypus
+Test file for connecting information in the databse to Platypus
 """
 import os
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Platypus.settings')

@@ -1,3 +1,5 @@
+""" Allows a student to add a course """ 
+
 ##############################################################################
 # Always run this block first so environmental variables are properly loaded #
 import os
@@ -29,6 +31,9 @@ from matchApp.models import Course, Section, Student, User
 django.setup()
 
 def addCourse(student_id, section_id):
+	"""Function to add a course to be available on Platypus. 
+    Arguments: student_id, and section_id of the course to be added 
+	Saves course to database. """
 	student = Student.objects.get(user__username=student_id)
 	course_list = str(student.course_list)
 

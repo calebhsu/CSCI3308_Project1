@@ -1,3 +1,7 @@
+""" Returns a list of potential matches for a student based on the specific sections of a course they
+are enrolled in. I.e. the matched students are in the same lecture"""
+
+
 ##############################################################################
 # Always run this block first so environmental variables are properly loaded #
 import os
@@ -29,6 +33,9 @@ from matchApp.models import Course, Section, Student, User
 django.setup()
 
 def returnMatchesBySection(student_id):
+	""" Find a list of students that are in the same section/s as the student. 
+	Arguments: student_id 
+	Returns a dictionary of matching students. """
 	sections_list = returnSectionsList(student_id)
 
 	sections_dict = queryAndMatchSections()

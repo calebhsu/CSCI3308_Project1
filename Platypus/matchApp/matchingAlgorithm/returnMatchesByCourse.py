@@ -1,3 +1,5 @@
+""" Returns a list of potential matches for the student based on the courses they are enrolled in. """
+
 ##############################################################################
 # Always run this block first so environmental variables are properly loaded #
 import os
@@ -29,6 +31,9 @@ from matchApp.models import Course, Section, Student, User
 django.setup()
 
 def returnMatchesByCourse(student_id):
+	""" Find a list of students that are taking the same course/s as the student. 
+	Arguments: student_id 
+	Returns dictionary of matching students. """
 	course_list = returnCourseList(student_id)
 
 	course_dict = queryAndMatchCourses()

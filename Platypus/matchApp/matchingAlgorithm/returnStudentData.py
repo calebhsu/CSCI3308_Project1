@@ -1,3 +1,6 @@
+""" Gets the specific data associated with a student user, i.e. a username, name, and email. 
+"""
+
 ##############################################################################
 # Always run this block first so environmental variables are properly loaded #
 import os
@@ -32,6 +35,9 @@ django.setup()
 ##############################################################################
 
 def returnStudentData(student_id):
+	"""Find information associated with a student user. 
+	Arguments: student_id. 
+	Returns the attributes of the student user. """
 	queried_student = Student.objects.get(user__username=student_id) #use "__" to access foreign key attributes
 	username = queried_student.user.username
 	name = str(queried_student.user.first_name)+" "+str(queried_student.user.last_name)
