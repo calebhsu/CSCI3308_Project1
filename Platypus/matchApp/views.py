@@ -29,7 +29,6 @@ def index(request):
    
     context = RequestContext(request)
 
-    .
     # Note the key boldmessage is the same as {{ boldmessage }} in the template!
     context_dict = {}
 
