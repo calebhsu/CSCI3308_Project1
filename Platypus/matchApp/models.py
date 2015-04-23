@@ -3,7 +3,6 @@
 
 from django.db import models
 from django.contrib.auth.models import User
-# Create your models here.
 
 class Course(models.Model):
     """ Named course, but essentially creates a class for the classes available on platypus.
