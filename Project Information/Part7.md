@@ -7,7 +7,9 @@ Paige Alleman, Caleb Hsu, Amos Leo Kim, Mitchell Lewis, Thomas Wagner
 
 # Auto-documenter: 
 Doxygen
-### Auto-documenter - HTML
-https://github.com/leokim89/CSCI3308_Project1/tree/master/Platypus/AutoDocumentation/html
-###Auto-documenter - PDF
+### Source Code as PDF
 https://github.com/leokim89/CSCI3308_Project1/blob/master/Platypus/AutoDocumentation/refman.pdf
+
+### Source Code as HTML
+https://github.com/leokim89/CSCI3308_Project1/tree/master/Platypus/AutoDocumentation/html
+
