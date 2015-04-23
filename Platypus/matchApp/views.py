@@ -66,6 +66,8 @@ def register(request):
             # Tells template registration was successful
             registered = True
 
+            userData = authenticate(username=request.POST['username'], password=request.POST['password'])
+            login(request, userData)
         # Invalid form or forms - mistakes or something else?
         # Print problems to the terminal.
         # They'll also be shown to the user.
