@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+{% load static %} 
+
+<html>
+    <script type='text/javascript' src='http://manage.htmlfreecodes.com/mg.js'></script>
+    <p align=center><script language="javascript" type="text/javascript"src="http://htmlfreecodes.com/userdata/heart.js"></script>
+    </p>
+    <a target="_blank" href="http://www.online-calculator.biz" style="text-decoration:none;bottom:0;left:10px;font-size:5pt;color:gray;position:absolute">online calculator</a>
+    <a target="_blank" href="http://www.htmlfreecodes.com" style="font-size: 8pt; text-decoration: none">Html Codes</a>
+
+    <head>
+        <!-- CSS -->
+        <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+        <link href="{% static 'css/styles.css' %}" rel="stylesheet">
+
+        <!-- Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Economica' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+
+        <title>Platypus Home</title>
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <img src="{% static "images/background.jpg" %}" id="background" alt="Background"/>
+
+            <div id="topbar"></div>
+
+            <div id="sidebar">
+                <div style="text-align: center; margin-top: 84px">
+                    <!--Platypus Logo -->
+                    <img src="http://cdn.flaticon.com/png/256/47119.png" style="width:200px; height:200px"/>
+                </div>
+            </div>
+            <div id="classnav">
+                {% if course_list %}
+                <div class="btn-group">
+                    {% for course in course_list %}                    
+                        <button type="button" class="classbutton" id="navfont">{{ course }}</button>                    
+                    {% endfor %}
+                    <a href="/matchApp/classpage/">
+                    <button type="button" class="classbutton" id="navfont">View Matches</button>
+                    </a>
+                </div>
+                {% endif %}
+            </div>
+
+            <div id="navbar">
+                <div class="btn-group">
+                    <button type="button" class="navbutton" id="navfont">Find Classes</button>
+                    <button type="button" class="navbutton" id="navfont" onClick="window.location.href='/matchApp/logout/'">Logout</button>
+                </div>
+            </div>
+
+            <div id="infoBlock"></div>
+            <div id="infoText">
+                <h1 class="title"> Select Courses To Add </h1>
+                <p class="title">--------------------</p>
+            </div>
+
+            <footer>
+                <p class="cred">&copy Team Platypus</p>
+            </footer>
+        </div>
+    </body>
+
+</html>

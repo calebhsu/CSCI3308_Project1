@@ -145,3 +145,19 @@ def user_logout(request):
     logout(request)
 
     return HttpResponseRedirect('/matchApp/')
+
+@login_required
+def addcourses(request):
+    context = RequestContext(request)
+
+    user = request.user
+    course_dict = returnMatchesByCourse(user.username)
+    sections_dict = returnMatchesBySection(user.username)
+
+    student_dict = {}
+    for student in Student.objects.all():
+        student_dict[student.user.username]=student.user.email
+
+    context_dict = {'course_dict':course_dict, 'sections_dict':sections_dict, 'student_dict':student_dict}
+
+    return render_to_response('matchApp/addcourses.html', context_dict, context)
