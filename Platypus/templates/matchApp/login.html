@@ -7,9 +7,7 @@
     <script type='text/javascript' src='http://manage.htmlfreecodes.com/mg.js'></script>
     <p align=center><script language="javascript" type="text/javascript"src="http://htmlfreecodes.com/userdata/heart.js"></script>
     </p>
-    <a target="_blank" href="http://www.online-calculator.biz" style="text-decoration:none;bottom:0;left:10px;font-size:5pt;color:gray;position:absolute">online calculator</a>
     <a target="_blank" href="http://www.htmlfreecodes.com" style="font-size: 8pt; text-decoration: none">Html Codes</a>
-
 
     <head>
         <!-- CSS -->
@@ -37,24 +35,26 @@
             <div id="topbar"></div>
 
             <div id="sidebar">
-                <div style="text-align: center; margin-top: 84px">
+                <div style="text-align: center; margin-top: 19%;">
                     <!-- Platypus Logo -->
                     <img src="http://cdn.flaticon.com/png/256/47119.png" style="width:200px; height:200px"/>
                 </div>
             </div>
 
+            <h3 id="signUpBlock">No account?</h3>
+            <button class="btn btn-lg btn-primary btn-block" id="signUpButton" onClick="window.location.href='/matchApp/register/'">Sign Up!</button> 
+
             <div id="signIn">
                 <h2 class="form-signin-heading">Log In / Sign Up</h2>
                 <form class="form-signin" method="post" action="/matchApp/login/">
                     {% csrf_token %}
-                    <label for="inputUser" class="sr-only">Student ID</label>
-                    <input type="text" id="inputEmail" class="form-control" name="username" placeholder="Student ID" required autofocus/>
+                    <label for="inputUser" class="sr-only">Username</label>
+                    <input type="text" id="inputEmail" class="form-control" name="username" placeholder="Username" required autofocus/>
 
                     <label for="inputPassword" class="sr-only">Password</label>
                     <input type="password" id="inputPassword" class="form-control" name="password" placeholder="Password" required/>
 
                     <button class="btn btn-lg btn-primary btn-block" type="submit">Log In</button>
-                    <button class="btn btn-lg btn-primary btn-block" onClick="window.location.href='/matchApp/register/'">Sign Up!</button> 
                 </form>
             </div>
 

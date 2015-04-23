@@ -6,7 +6,6 @@
     <script type='text/javascript' src='http://manage.htmlfreecodes.com/mg.js'></script>
     <p align=center><script language="javascript" type="text/javascript"src="http://htmlfreecodes.com/userdata/heart.js"></script>
     </p>
-    <a target="_blank" href="http://www.online-calculator.biz" style="text-decoration:none;bottom:0;left:10px;font-size:5pt;color:gray;position:absolute">online calculator</a>
     <a target="_blank" href="http://www.htmlfreecodes.com" style="font-size: 8pt; text-decoration: none">Html Codes</a>
 
     <head>
@@ -25,7 +24,7 @@
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="js/bootstrap.min.js"></script>
 
-        <title>Platypus Home</title>
+        <title>Add Courses</title>
     </head>
 
     <body>
@@ -57,7 +56,7 @@
                 <div class="btn-group">
                     {% for course in course_list %}                    
                     <a href="/matchApp/selectsection_{{course.dept_id}}{{course.course_number}}">
-                        <button type="button" class="classbutton" id="classfont">{{ course.dept_id }} {{course.course_number}}: {{course.title}}</button>
+                        <button type="button" class="classbutton" id="classfont">[{{ course.dept_id }} {{course.course_number}}] {{course.title}}</button>
                     </a>
                     {% endfor %}
                     
