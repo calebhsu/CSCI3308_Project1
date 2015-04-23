@@ -40,29 +40,25 @@
                     <img src="http://cdn.flaticon.com/png/256/47119.png" style="width:200px; height:200px"/>
                 </div>
             </div>
-            <div id="classnav">
-                {% if sections_list %}
-                <div class="btn-group">
-                    {% for section in sections_list %}                    
-                    <a href="/matchApp/add{{section}}">
-                        <button type="button" class="classbutton" id="navfont">{{ section}} </button>
-                    </a>
-                    {% endfor %}
-                </div>
-                {% endif %}
-            </div>
 
             <div id="navbar">
                 <div class="btn-group">
-                    <button type="button" class="navbutton" id="navfont">Find Classes</button>
+                    <button type="button" class="navbutton" id="navfont" onClick="window.location.href='/matchApp/home/'">Go Back</button>
                     <button type="button" class="navbutton" id="navfont" onClick="window.location.href='/matchApp/logout/'">Logout</button>
                 </div>
             </div>
 
             <div id="infoBlock"></div>
             <div id="infoText">
-                <h1 class="title"> Select Courses To Add </h1>
+                <h1 class="title"> Select Sections To Add </h1>
                 <p class="title">--------------------</p>
+                {% if sections_list %}
+                <div class="btn-group">
+                    {% for section in sections_list %}                    
+                        <button type="button" class="sectionbutton" id="classfont" onClick="window.location.href='/matchApp/add{{section}}'">{{ section}}</button>
+                    {% endfor %}
+                </div>
+                {% endif %}
             </div>
 
             <footer>

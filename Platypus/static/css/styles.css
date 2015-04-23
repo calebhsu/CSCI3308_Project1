@@ -157,10 +157,17 @@ button {
 
 .classbutton {
   width: 100%;
-  height: 24px;
+  height: 30px;
   margin-left: 30%;
   color: white;
-  margin-top: 15px;
+  margin-top: 2%;
+}
+
+.sectionbutton {
+  width: 300%;
+  height: 30px;
+  margin-left: 220%;
+  margin-top: 10%;
 }
 
 #back {
