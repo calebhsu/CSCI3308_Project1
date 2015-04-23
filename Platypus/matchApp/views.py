@@ -153,24 +153,89 @@ def addcourses(request):
     context = RequestContext(request)
     user=request.user
     username = str(user.username)
-
     course_list = Course.objects.all()
-
     context_dict = {'course_list':course_list}
-
     return render_to_response('matchApp/addcourses.html', context_dict, context)
 
 @login_required
 def selectsection_CSCI1300(request):
     context = RequestContext(request)
     user=request.user
-
     sections_list = Section.objects.filter(course_title__course_number=1300)
-
     context_dict = {'sections_list':sections_list}
-
     return render_to_response('matchApp/selectsection_CSCI1300.html', context_dict, context)
 
+@login_required
+def selectsection_CSCI1310(request):
+    context = RequestContext(request)
+    user=request.user
+    sections_list = Section.objects.filter(course_title__course_number=1310)
+    context_dict = {'sections_list':sections_list}
+    return render_to_response('matchApp/selectsection_CSCI1310.html', context_dict, context)
+
+@login_required
+def selectsection_CSCI2270(request):
+    context = RequestContext(request)
+    user=request.user
+    sections_list = Section.objects.filter(course_title__course_number=2270)
+    context_dict = {'sections_list':sections_list}
+    return render_to_response('matchApp/selectsection_CSCI2270.html', context_dict, context)
+
+@login_required
+def selectsection_CSCI2400(request):
+    context = RequestContext(request)
+    user=request.user
+    sections_list = Section.objects.filter(course_title__course_number=2400)
+    context_dict = {'sections_list':sections_list}
+    return render_to_response('matchApp/selectsection_CSCI2400.html', context_dict, context)
+
+@login_required
+def selectsection_CSCI2820(request):
+    context = RequestContext(request)
+    user=request.user
+    sections_list = Section.objects.filter(course_title__course_number=2820)
+    context_dict = {'sections_list':sections_list}
+    return render_to_response('matchApp/selectsection_CSCI2820.html', context_dict, context)
+
+@login_required
+def selectsection_CSCI2824(request):
+    context = RequestContext(request)
+    user=request.user
+    sections_list = Section.objects.filter(course_title__course_number=2824)
+    context_dict = {'sections_list':sections_list}
+    return render_to_response('matchApp/selectsection_CSCI2824.html', context_dict, context)
+
+@login_required
+def selectsection_CSCI3104(request):
+    context = RequestContext(request)
+    user=request.user
+    sections_list = Section.objects.filter(course_title__course_number=3104)
+    context_dict = {'sections_list':sections_list}
+    return render_to_response('matchApp/selectsection_CSCI3104.html', context_dict, context)
+
+@login_required
+def selectsection_CSCI3155(request):
+    context = RequestContext(request)
+    user=request.user
+    sections_list = Section.objects.filter(course_title__course_number=3155)
+    context_dict = {'sections_list':sections_list}
+    return render_to_response('matchApp/selectsection_CSCI3155.html', context_dict, context)
+
+@login_required
+def selectsection_CSCI3308(request):
+    context = RequestContext(request)
+    user=request.user
+    sections_list = Section.objects.filter(course_title__course_number=3308)
+    context_dict = {'sections_list':sections_list}
+    return render_to_response('matchApp/selectsection_CSCI3308.html', context_dict, context)
+
+@login_required
+def selectsection_CSCI3753(request):
+    context = RequestContext(request)
+    user=request.user
+    sections_list = Section.objects.filter(course_title__course_number=3753)
+    context_dict = {'sections_list':sections_list}
+    return render_to_response('matchApp/selectsection_CSCI3753.html', context_dict, context)
 
 
 
@@ -179,8 +244,219 @@ def add1300001(request):
     context = RequestContext(request)
     user=request.user
     username = str(user.username)
-
-    addCourse(user.username, '1310001')
-
+    addCourse(user.username, '1300001')
     return HttpResponseRedirect('/matchApp/home')
+@login_required
+def add1300002(request):
+    context = RequestContext(request)
+    user=request.user
+    username = str(user.username)
+    addCourse(user.username, '1300002')
+    return HttpResponseRedirect('/matchApp/home')
+@login_required
+def add1300003(request):
+    context = RequestContext(request)
+    user=request.user
+    username = str(user.username)
+    addCourse(user.username, '1300003')
+    return HttpResponseRedirect('/matchApp/home')
+
+@login_required
+def add1310001(request):
+    context = RequestContext(request)
+    user=request.user
+    username = str(user.username)
+    addCourse(user.username, '1310001')
+    return HttpResponseRedirect('/matchApp/home')
+@login_required
+def add1310002(request):
+    context = RequestContext(request)
+    user=request.user
+    username = str(user.username)
+    addCourse(user.username, '1310002')
+    return HttpResponseRedirect('/matchApp/home')
+@login_required
+def add1310003(request):
+    context = RequestContext(request)
+    user=request.user
+    username = str(user.username)
+    addCourse(user.username, '1310003')
+    return HttpResponseRedirect('/matchApp/home')
+
+@login_required
+def add2270001(request):
+    context = RequestContext(request)
+    user=request.user
+    username = str(user.username)
+    addCourse(user.username, '2270001')
+    return HttpResponseRedirect('/matchApp/home')
+@login_required
+def add2270002(request):
+    context = RequestContext(request)
+    user=request.user
+    username = str(user.username)
+    addCourse(user.username, '2270002')
+    return HttpResponseRedirect('/matchApp/home')
+@login_required
+def add2270003(request):
+    context = RequestContext(request)
+    user=request.user
+    username = str(user.username)
+    addCourse(user.username, '2270003')
+    return HttpResponseRedirect('/matchApp/home')
+
+@login_required
+def add2400001(request):
+    context = RequestContext(request)
+    user=request.user
+    username = str(user.username)
+    addCourse(user.username, '2400001')
+    return HttpResponseRedirect('/matchApp/home')
+@login_required
+def add2400002(request):
+    context = RequestContext(request)
+    user=request.user
+    username = str(user.username)
+    addCourse(user.username, '2400002')
+    return HttpResponseRedirect('/matchApp/home')
+@login_required
+def add2400003(request):
+    context = RequestContext(request)
+    user=request.user
+    username = str(user.username)
+    addCourse(user.username, '2400003')
+    return HttpResponseRedirect('/matchApp/home')
+
+@login_required
+def add2820001(request):
+    context = RequestContext(request)
+    user=request.user
+    username = str(user.username)
+    addCourse(user.username, '2820001')
+    return HttpResponseRedirect('/matchApp/home')
+@login_required
+def add2820002(request):
+    context = RequestContext(request)
+    user=request.user
+    username = str(user.username)
+    addCourse(user.username, '2820002')
+    return HttpResponseRedirect('/matchApp/home')
+@login_required
+def add2820003(request):
+    context = RequestContext(request)
+    user=request.user
+    username = str(user.username)
+    addCourse(user.username, '2820003')
+    return HttpResponseRedirect('/matchApp/home')
+
+@login_required
+def add2824001(request):
+    context = RequestContext(request)
+    user=request.user
+    username = str(user.username)
+    addCourse(user.username, '2824001')
+    return HttpResponseRedirect('/matchApp/home')
+@login_required
+def add2824002(request):
+    context = RequestContext(request)
+    user=request.user
+    username = str(user.username)
+    addCourse(user.username, '2824002')
+    return HttpResponseRedirect('/matchApp/home')
+@login_required
+def add2824003(request):
+    context = RequestContext(request)
+    user=request.user
+    username = str(user.username)
+    addCourse(user.username, '2824003')
+    return HttpResponseRedirect('/matchApp/home')
+
+@login_required
+def add3104001(request):
+    context = RequestContext(request)
+    user=request.user
+    username = str(user.username)
+    addCourse(user.username, '3104001')
+    return HttpResponseRedirect('/matchApp/home')
+@login_required
+def add3104002(request):
+    context = RequestContext(request)
+    user=request.user
+    username = str(user.username)
+    addCourse(user.username, '3104002')
+    return HttpResponseRedirect('/matchApp/home')
+@login_required
+def add3104003(request):
+    context = RequestContext(request)
+    user=request.user
+    username = str(user.username)
+    addCourse(user.username, '3104003')
+    return HttpResponseRedirect('/matchApp/home')
+
+@login_required
+def add3155001(request):
+    context = RequestContext(request)
+    user=request.user
+    username = str(user.username)
+    addCourse(user.username, '3155001')
+    return HttpResponseRedirect('/matchApp/home')
+@login_required
+def add3155002(request):
+    context = RequestContext(request)
+    user=request.user
+    username = str(user.username)
+    addCourse(user.username, '3155002')
+    return HttpResponseRedirect('/matchApp/home')
+@login_required
+def add3155003(request):
+    context = RequestContext(request)
+    user=request.user
+    username = str(user.username)
+    addCourse(user.username, '3155003')
+    return HttpResponseRedirect('/matchApp/home')
+
+@login_required
+def add3308001(request):
+    context = RequestContext(request)
+    user=request.user
+    username = str(user.username)
+    addCourse(user.username, '3308001')
+    return HttpResponseRedirect('/matchApp/home')
+@login_required
+def add3308002(request):
+    context = RequestContext(request)
+    user=request.user
+    username = str(user.username)
+    addCourse(user.username, '3308002')
+    return HttpResponseRedirect('/matchApp/home')
+@login_required
+def add3308003(request):
+    context = RequestContext(request)
+    user=request.user
+    username = str(user.username)
+    addCourse(user.username, '3308003')
+    return HttpResponseRedirect('/matchApp/home')
+
+@login_required
+def add3753001(request):
+    context = RequestContext(request)
+    user=request.user
+    username = str(user.username)
+    addCourse(user.username, '3753001')
+    return HttpResponseRedirect('/matchApp/home')
+@login_required
+def add3753002(request):
+    context = RequestContext(request)
+    user=request.user
+    username = str(user.username)
+    addCourse(user.username, '3753002')
+    return HttpResponseRedirect('/matchApp/home')
+@login_required
+def add3753003(request):
+    context = RequestContext(request)
+    user=request.user
+    username = str(user.username)
+    addCourse(user.username, '3753003')
+    return HttpResponseRedirect('/matchApp/home')
+
 
