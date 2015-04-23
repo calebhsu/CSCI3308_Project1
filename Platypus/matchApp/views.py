@@ -13,13 +13,15 @@ from django.contrib.auth.models import User
 from matchApp.models import Student, Course, Section, User
 from matchApp.forms import UserForm
 
+from django.core.management import call_command
+
 
 # Import from child directory matchingAlgorithm
 """ import matching algorithm from child directory"""
 from matchApp.matchingAlgorithm.returnCourseList import returnCourseList
 from matchApp.matchingAlgorithm.returnMatchesByCourse import returnMatchesByCourse
 from matchApp.matchingAlgorithm.returnMatchesBySection  import returnMatchesBySection
-
+from matchApp.matchingAlgorithm.addCourse import addCourse
 
 def index(request):
     """ Request context of request. Context contains information such as client's machine details. 
@@ -149,15 +151,36 @@ def user_logout(request):
 @login_required
 def addcourses(request):
     context = RequestContext(request)
+    user=request.user
+    username = str(user.username)
 
-    user = request.user
-    course_dict = returnMatchesByCourse(user.username)
-    sections_dict = returnMatchesBySection(user.username)
+    course_list = Course.objects.all()
 
-    student_dict = {}
-    for student in Student.objects.all():
-        student_dict[student.user.username]=student.user.email
-
-    context_dict = {'course_dict':course_dict, 'sections_dict':sections_dict, 'student_dict':student_dict}
+    context_dict = {'course_list':course_list}
 
     return render_to_response('matchApp/addcourses.html', context_dict, context)
+
+@login_required
+def selectsection_CSCI1300(request):
+    context = RequestContext(request)
+    user=request.user
+
+    sections_list = Section.objects.filter(course_title__course_number=1300)
+
+    context_dict = {'sections_list':sections_list}
+
+    return render_to_response('matchApp/selectsection_CSCI1300.html', context_dict, context)
+
+
+
+
+@login_required
+def add1300001(request):
+    context = RequestContext(request)
+    user=request.user
+    username = str(user.username)
+
+    addCourse(user.username, '1310001')
+
+    return HttpResponseRedirect('/matchApp/home')
+

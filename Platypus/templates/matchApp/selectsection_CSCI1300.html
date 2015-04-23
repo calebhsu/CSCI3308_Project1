@@ -41,16 +41,13 @@
                 </div>
             </div>
             <div id="classnav">
-                {% if course_list %}
+                {% if sections_list %}
                 <div class="btn-group">
-                    {% for course in course_list %}                    
-                    <a href="/matchApp/selectsection_{{course.dept_id}}{{course.course_number}}">
-                        <button type="button" class="classbutton" id="navfont">{{ course.dept_id }} {{course.course_number}}: {{course.title}}</button>
+                    {% for section in sections_list %}                    
+                    <a href="/matchApp/add{{section}}">
+                        <button type="button" class="classbutton" id="navfont">{{ section}} </button>
                     </a>
                     {% endfor %}
-                    <a href="/matchApp/classpage/">
-                    <button type="button" class="classbutton" id="navfont">View Matches</button>
-                    </a>
                 </div>
                 {% endif %}
             </div>

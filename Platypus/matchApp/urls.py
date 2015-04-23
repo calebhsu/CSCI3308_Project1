@@ -12,4 +12,6 @@ urlpatterns = patterns('',
     url(r'^register/$', views.register, name='register'),
     url(r'^login/$', views.user_login, name='login'),
     url(r'^logout/$', views.user_logout, name='logout'),
-	url(r'^addcourses/$', views.addcourses, name='addcourses'))
+	url(r'^addcourses/$', views.addcourses, name='addcourses'),
+	url(r'^selectsection_CSCI1300/$', views.selectsection_CSCI1300, name='1300'),
+	url(r'^add1300001/$', views.add1300001, name='add1300001'))
