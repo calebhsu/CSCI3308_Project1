@@ -43,12 +43,12 @@
 
             <div id="navbar">
                 <div class="btn-group">
-                    <a href="/matchApp/addcourses/"><button type="button" class="navbutton" id="navfont">Add Classes</button></a>
+                    <button type="button" class="navbutton" id="navfont" onClick="window.location.href='/matchApp/addcourses/'">Add Classes</button>
                     <button type="button" class="navbutton" id="navfont" onClick="window.location.href='/matchApp/logout/'">Logout</button>
                 </div>
             </div>
 
-            <div id="classInfoBlock "></div>
+            <div id="classInfoBlock"></div>
             <div id="classInfoText">
                 <h1 class="title"> Welcome! </h1>
                 <p class="title">--------------------</p>
@@ -57,7 +57,7 @@
                     {% for course in course_list %}                    
                         <p id="descCourseList">{{ course }}</p>                    
                     {% endfor %}
-                <button type="button" class="classbutton" id="navfont" onClick="window.location.href='/matchApp/classpage'">View Matches</button>
+                <button type="button" class="matchbutton" id="navfont" onClick="window.location.href='/matchApp/classpage'">View Matches</button>
                 {% endif %}
             </div>
 

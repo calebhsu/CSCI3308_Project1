@@ -47,4 +47,4 @@ class Student(models.Model):
     course_list = models.CharField(max_length=1024, default="")
 
     def __unicode__(self):
-        return unicode(self.user.username) #UPDATED student now returns username, username will be assigned to student_id
+        return unicode(self.user.username)

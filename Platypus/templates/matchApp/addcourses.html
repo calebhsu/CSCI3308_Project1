@@ -40,32 +40,29 @@
                     <img src="http://cdn.flaticon.com/png/256/47119.png" style="width:200px; height:200px"/>
                 </div>
             </div>
-            <div id="classnav">
-                {% if course_list %}
-                <div class="btn-group">
-                    {% for course in course_list %}                    
-                    <a href="/matchApp/selectsection_{{course.dept_id}}{{course.course_number}}">
-                        <button type="button" class="classbutton" id="navfont">{{ course.dept_id }} {{course.course_number}}: {{course.title}}</button>
-                    </a>
-                    {% endfor %}
-                    <a href="/matchApp/classpage/">
-                    <button type="button" class="classbutton" id="navfont">View Matches</button>
-                    </a>
-                </div>
-                {% endif %}
-            </div>
 
             <div id="navbar">
                 <div class="btn-group">
-                    <button type="button" class="navbutton" id="navfont">Find Classes</button>
+                    <button type="button" class="navbutton" id="navfont" onClick="window.location.href='/matchApp/home/'">Go Back</button>
+                    <button type="button" class="navbutton" id="navfont" onClick="window.location.href='/matchApp/classpage'">View Matches</button>
                     <button type="button" class="navbutton" id="navfont" onClick="window.location.href='/matchApp/logout/'">Logout</button>
                 </div>
             </div>
 
-            <div id="infoBlock"></div>
-            <div id="infoText">
+            <div id="classInfoBlock"></div>
+            <div id="classInfoText">
                 <h1 class="title"> Select Courses To Add </h1>
                 <p class="title">--------------------</p>
+                {% if course_list %}
+                <div class="btn-group">
+                    {% for course in course_list %}                    
+                    <a href="/matchApp/selectsection_{{course.dept_id}}{{course.course_number}}">
+                        <button type="button" class="classbutton" id="classfont">{{ course.dept_id }} {{course.course_number}}: {{course.title}}</button>
+                    </a>
+                    {% endfor %}
+                    
+                </div>
+                {% endif %}
             </div>
 
             <footer>
