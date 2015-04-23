@@ -71,12 +71,12 @@
                 <p class="title">--------------------</p>
                 {% for section in sections_dict %}
                     Section: {{ section }}<br>
-                    Matches:
+                    Matches:<br>
                     {% for student in sections_dict|key:section %}
                         <b>{{student}}</b>
                         {% if student in student_dict %}
                         {{student_dict|key:student}}
-                        {%endif%}
+                        {%endif%}<br>
 
                     {% empty %}
                         None      
