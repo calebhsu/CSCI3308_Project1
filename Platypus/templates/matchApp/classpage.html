@@ -58,7 +58,7 @@
                     {% for student in course_dict|key:course %}
                         <b>{{student}}</b>
                         {% if student in student_dict %}
-                        {{student_dict|key:student}}
+                        <a href= "mailto:{{student_dict|key:student}}">   {{student_dict|key:student}}</a>
                         {% endif %}<br>
                     {% endfor %}<br>
 
@@ -75,9 +75,8 @@
                     {% for student in sections_dict|key:section %}
                         <b>{{student}}</b>
                         {% if student in student_dict %}
-                        {{student_dict|key:student}}
-                        {%endif%}<br>
-
+                        <a href= "mailto:{{student_dict|key:student}}"> {{student_dict|key:student}}</a><br>
+                        {%endif%}
                     {% empty %}
                         None      
                     {% endfor %}<br>
