@@ -49,9 +49,9 @@
                 </div>
             </div>
 
-            <div id="studentList"></div>
-            <div id="studentListHeader">
-                <h1 class="title">Matches By Course</h1>
+            <div id="courseMatch"></div>
+            <div id="courseMatchHeader">
+                <h1 class="title">Course Matches</h1>
                 <p class="title">--------------------</p>
                 {% for course in course_dict%}
                     {{course}}<br>
@@ -59,15 +59,15 @@
                         <b>{{student}}</b>
                         {% if student in student_dict %}
                         {{student_dict|key:student}}
-                        {%endif%}<br>
-                    {%endfor%}<br>
+                        {% endif %}<br>
+                    {% endfor %}<br>
 
                 {% endfor %}
             </div>
 
-            <div id="groupList"></div>
-            <div id="groupListHeader">
-                <h1 class="title">Matches By Section</h1>
+            <div id="sectionMatch"></div>
+            <div id="sectionMatchHeader">
+                <h1 class="title">Section Matches</h1>
                 <p class="title">--------------------</p>
                 {% for section in sections_dict %}
                     Section: {{ section }}<br>
@@ -80,8 +80,9 @@
 
                     {% empty %}
                         None      
-                    {%endfor%}<br>
+                    {% endfor %}<br>
                 {% endfor %}
+
             </div>
     </body>
 </html>

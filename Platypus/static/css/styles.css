@@ -83,23 +83,23 @@ p {
 }
 
 /* Class Page Layout */
-#studentList {
-  width: 22%;
-  height: 65%;
+#courseMatch {
+  width: 25%;
+  height: 85%;
   background-color: black;
   opacity: 0.5;
-  margin-top: 7%;
-  margin-left: 5%;
+  margin-top: 0.5%;
+  margin-left: 1%;
   position: fixed;
 }
 
-#groupList {
-  width: 30%;
-  height: 65%;
+#sectionMatch {
+  width: 35%;
+  height: 85%;
   background-color: black;
   opacity: 0.5;
-  margin-top: 7%;
-  margin-left: 28%;
+  margin-top: 0.5%;
+  margin-left: 27%;
   position: fixed;
 }
 
@@ -239,24 +239,24 @@ h1, h2, h3 {
   letter-spacing: 1px;
 }
 
-#studentListHeader {
+#courseMatchHeader {
   font-family: 'Economica';
   font-size: 20px;
   color: white;
-  width: 20%;
-  height: 65%;
-  margin-top: 7%;
-  margin-left: 6%;
+  width: 23%;
+  height: 80%;
+  margin-top: 0.5%;
+  margin-left: 2.5%;
   position: fixed;
 }
 
-#groupListHeader {
+#sectionMatchHeader {
   font-family: 'Economica';
   font-size: 20px;
   color: white;
   width: 30%;
-  height: 65%;
-  margin-top: 7%;
+  height: 80%;
+  margin-top: 0.5%;
   margin-left: 29%;
   position: fixed;
 }
