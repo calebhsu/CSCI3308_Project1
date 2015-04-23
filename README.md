@@ -7,6 +7,9 @@ Live site: http://leokim89.pythonanywhere.com/matchApp/
 ### Contributors
 Paige Alleman, Caleb Hsu, Leo Kim, Mitchell Lewis, Tommy Wagner
 
+##AutoDoc HTML Navigation: 
+To use the HTML Doxygen output, download the HTML folder under the AutoDocumentation section in the repository. Run index.html from that file to use a clickableversion of the auto documentation. Alternatively, view the refman.pdf file in the same AutoDocumentation section. 
+
 ## Using GitHub
 The following instructions assume the user has
 
