@@ -40,18 +40,6 @@
                     <img src="http://cdn.flaticon.com/png/256/47119.png" style="width:200px; height:200px"/>
                 </div>
             </div>
-            <div id="classnav">
-                {% if course_list %}
-                <div class="btn-group">
-                    {% for course in course_list %}                    
-                        <p type="button" class="classbutton" id="navfont_white">{{ course }}</p>                    
-                    {% endfor %}
-                    <a href="/matchApp/classpage/">
-                    <button type="button" class="classbutton" id="navfont">View Matches</button>
-                    </a>
-                </div>
-                {% endif %}
-            </div>
 
             <div id="navbar">
                 <div class="btn-group">
@@ -60,11 +48,17 @@
                 </div>
             </div>
 
-            <div id="infoBlock"></div>
-            <div id="infoText">
+            <div id="classInfoBlock "></div>
+            <div id="classInfoText">
                 <h1 class="title"> Welcome! </h1>
                 <p class="title">--------------------</p>
                 <p class="desc">Currently Enrolled In:</p>
+                {% if course_list %}
+                    {% for course in course_list %}                    
+                        <p id="descCourseList">{{ course }}</p>                    
+                    {% endfor %}
+                <button type="button" class="classbutton" id="navfont" onClick="window.location.href='/matchApp/classpage'">View Matches</button>
+                {% endif %}
             </div>
 
             <footer>
