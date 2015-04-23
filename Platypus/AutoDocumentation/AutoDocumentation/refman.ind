@@ -1,0 +1,672 @@
+\begin{theindex}
+
+  \item {\+\_\+\+\_\+unicode\+\_\+\+\_\+}
+    \subitem {match\+App\+::models\+::\+Course}, \hyperpage{23}
+    \subitem {match\+App\+::models\+::\+Section}, \hyperpage{25}
+    \subitem {match\+App\+::models\+::\+Student}, \hyperpage{26}
+
+  \indexspace
+
+  \item {a}
+    \subitem {bootstrap.\+min.\+js}, \hyperpage{58}
+  \item {a\+D}
+    \subitem {jquery.\+js}, \hyperpage{32}
+  \item {A\+L\+L\+O\+W\+E\+D\+\_\+\+H\+O\+S\+T\+S}
+    \subitem {Platypus\+::settings}, \hyperpage{18}
+  \item {a\+M}
+    \subitem {jquery.\+js}, \hyperpage{32}
+  \item {a\+Q}
+    \subitem {jquery.\+js}, \hyperpage{32}
+  \item {a\+Z}
+    \subitem {jquery.\+js}, \hyperpage{32}
+  \item {add\+\_\+course}
+    \subitem {populate}, \hyperpage{21}
+  \item {add\+\_\+section}
+    \subitem {populate}, \hyperpage{21}
+  \item {add\+\_\+student}
+    \subitem {populate}, \hyperpage{21}
+  \item {add\+Course}
+    \subitem {match\+App\+::matching\+Algorithm\+::add\+Course}, 
+		\hyperpage{10}
+  \item {alert}
+    \subitem {bootstrap.\+min.\+js}, \hyperpage{58}
+  \item {all\+\_\+0.\+js}
+    \subitem {search\+Data}, \hyperpage{42}
+  \item {all\+\_\+1.\+js}
+    \subitem {search\+Data}, \hyperpage{42}
+  \item {all\+\_\+2.\+js}
+    \subitem {search\+Data}, \hyperpage{43}
+  \item {all\+\_\+3.\+js}
+    \subitem {search\+Data}, \hyperpage{43}
+  \item {all\+\_\+4.\+js}
+    \subitem {search\+Data}, \hyperpage{44}
+  \item {all\+\_\+5.\+js}
+    \subitem {search\+Data}, \hyperpage{44}
+  \item {all\+\_\+6.\+js}
+    \subitem {search\+Data}, \hyperpage{44}
+  \item {ap}
+    \subitem {jquery.\+js}, \hyperpage{32}
+  \item {application}
+    \subitem {Platypus\+::wsgi}, \hyperpage{20}
+  \item {au}
+    \subitem {jquery.\+js}, \hyperpage{32}
+
+  \indexspace
+
+  \item {b}
+    \subitem {bootstrap.\+min.\+js}, \hyperpage{58}
+    \subitem {jquery.\+js}, \hyperpage{31, 32}
+  \item {B\+A\+S\+E\+\_\+\+D\+I\+R}
+    \subitem {Platypus\+::settings}, \hyperpage{18}
+  \item {backdrop}
+    \subitem {bootstrap.\+js}, \hyperpage{56}
+  \item {bb}
+    \subitem {jquery.\+js}, \hyperpage{41}
+  \item {bootstrap.\+js}
+    \subitem {backdrop}, \hyperpage{56}
+    \subitem {Button}, \hyperpage{56}
+    \subitem {Carousel}, \hyperpage{56}
+    \subitem {Collapse}, \hyperpage{56}
+    \subitem {dismiss}, \hyperpage{56}
+    \subitem {emulate\+Transition\+End}, \hyperpage{56}
+    \subitem {if}, \hyperpage{56}
+    \subitem {transition\+End}, \hyperpage{56}
+    \subitem {version}, \hyperpage{56}
+  \item {bootstrap.\+min.\+js}
+    \subitem {a}, \hyperpage{58}
+    \subitem {alert}, \hyperpage{58}
+    \subitem {b}, \hyperpage{58}
+    \subitem {button}, \hyperpage{58}
+    \subitem {c}, \hyperpage{58}
+    \subitem {close}, \hyperpage{58}
+    \subitem {Constructor}, \hyperpage{58}
+    \subitem {d}, \hyperpage{58}
+    \subitem {D\+E\+F\+A\+U\+L\+T\+S}, \hyperpage{58}
+    \subitem {e}, \hyperpage{58}
+    \subitem {emulate\+Transition\+End}, \hyperpage{59}
+    \subitem {has\+Class}, \hyperpage{58}
+    \subitem {if}, \hyperpage{58}
+    \subitem {no\+Conflict}, \hyperpage{59}
+    \subitem {set\+State}, \hyperpage{59}
+    \subitem {T\+R\+A\+N\+S\+I\+T\+I\+O\+N\+\_\+\+D\+U\+R\+A\+T\+I\+O\+N}, 
+		\hyperpage{59}
+    \subitem {toggle}, \hyperpage{59}
+    \subitem {V\+E\+R\+S\+I\+O\+N}, \hyperpage{59}
+  \item {bq}
+    \subitem {jquery.\+js}, \hyperpage{41}
+  \item {bs}
+    \subitem {jquery.\+js}, \hyperpage{41}
+  \item {Button}
+    \subitem {bootstrap.\+js}, \hyperpage{56}
+  \item {button}
+    \subitem {bootstrap.\+min.\+js}, \hyperpage{58}
+
+  \indexspace
+
+  \item {c}
+    \subitem {bootstrap.\+min.\+js}, \hyperpage{58}
+    \subitem {jquery.\+js}, \hyperpage{42}
+  \item {Carousel}
+    \subitem {bootstrap.\+js}, \hyperpage{56}
+  \item {catalog\+\_\+page}
+    \subitem {match\+App\+::models\+::\+Course}, \hyperpage{24}
+  \item {class\+\_\+id}
+    \subitem {match\+App\+::models\+::\+Section}, \hyperpage{25}
+  \item {classes\+\_\+0.\+js}
+    \subitem {search\+Data}, \hyperpage{45}
+  \item {classes\+\_\+1.\+js}
+    \subitem {search\+Data}, \hyperpage{45}
+  \item {classes\+\_\+2.\+js}
+    \subitem {search\+Data}, \hyperpage{45}
+  \item {classes\+\_\+3.\+js}
+    \subitem {search\+Data}, \hyperpage{46}
+  \item {classpage}
+    \subitem {match\+App\+::views}, \hyperpage{16}
+  \item {close}
+    \subitem {bootstrap.\+min.\+js}, \hyperpage{58}
+  \item {Collapse}
+    \subitem {bootstrap.\+js}, \hyperpage{56}
+  \item {Constructor}
+    \subitem {bootstrap.\+min.\+js}, \hyperpage{58}
+  \item {convert\+To\+Id}
+    \subitem {search.\+js}, \hyperpage{49}
+  \item {course\+\_\+list}
+    \subitem {match\+App\+::models\+::\+Student}, \hyperpage{26}
+  \item {course\+\_\+number}
+    \subitem {match\+App\+::models\+::\+Course}, \hyperpage{24}
+  \item {course\+\_\+title}
+    \subitem {match\+App\+::models\+::\+Section}, \hyperpage{25}
+  \item {create\+Results}
+    \subitem {search.\+js}, \hyperpage{49}
+  \item {css}
+    \subitem {jquery.\+js}, \hyperpage{42}
+  \item {cur\+C\+S\+S}
+    \subitem {jquery.\+js}, \hyperpage{42}
+
+  \indexspace
+
+  \item {d}
+    \subitem {bootstrap.\+min.\+js}, \hyperpage{58}
+  \item {D\+A\+T\+A\+B\+A\+S\+E\+S}
+    \subitem {Platypus\+::settings}, \hyperpage{18}
+  \item {D\+E\+B\+U\+G}
+    \subitem {Platypus\+::settings}, \hyperpage{18}
+  \item {D\+E\+F\+A\+U\+L\+T\+S}
+    \subitem {bootstrap.\+min.\+js}, \hyperpage{58}
+  \item {dept\+\_\+id}
+    \subitem {match\+App\+::models\+::\+Course}, \hyperpage{24}
+  \item {directory}
+    \subitem {match\+App\+::matching\+Algorithm\+::add\+Course}, 
+		\hyperpage{10}
+    \subitem {match\+App\+::matching\+Algorithm\+::query\+And\+Match\+Courses}, 
+		\hyperpage{11}
+    \subitem {match\+App\+::matching\+Algorithm\+::query\+And\+Match\+Sections}, 
+		\hyperpage{11}
+    \subitem {match\+App\+::matching\+Algorithm\+::remove\+Course}, 
+		\hyperpage{12}
+    \subitem {match\+App\+::matching\+Algorithm\+::return\+Course\+List}, 
+		\hyperpage{13}
+    \subitem {match\+App\+::matching\+Algorithm\+::return\+Matches\+By\+Course}, 
+		\hyperpage{13}
+    \subitem {match\+App\+::matching\+Algorithm\+::return\+Matches\+By\+Section}, 
+		\hyperpage{14}
+    \subitem {match\+App\+::matching\+Algorithm\+::return\+Sections\+List}, 
+		\hyperpage{14}
+    \subitem {match\+App\+::matching\+Algorithm\+::return\+Student\+Data}, 
+		\hyperpage{15}
+  \item {dismiss}
+    \subitem {bootstrap.\+js}, \hyperpage{56}
+  \item {dynsections.\+js}
+    \subitem {toggle\+Folder}, \hyperpage{30}
+    \subitem {toggle\+Inherit}, \hyperpage{30}
+    \subitem {toggle\+Level}, \hyperpage{30}
+    \subitem {toggle\+Visibility}, \hyperpage{30}
+    \subitem {update\+Stripes}, \hyperpage{30}
+
+  \indexspace
+
+  \item {e}
+    \subitem {bootstrap.\+min.\+js}, \hyperpage{58}
+  \item {each}
+    \subitem {jquery.\+js}, \hyperpage{31}
+  \item {emulate\+Transition\+End}
+    \subitem {bootstrap.\+js}, \hyperpage{56}
+    \subitem {bootstrap.\+min.\+js}, \hyperpage{59}
+  \item {extend}
+    \subitem {jquery.\+js}, \hyperpage{31}
+
+  \indexspace
+
+  \item {fields}
+    \subitem {match\+App\+::forms\+::\+User\+Form\+::\+Meta}, 
+		\hyperpage{24}
+  \item {files\+\_\+0.\+js}
+    \subitem {search\+Data}, \hyperpage{46}
+  \item {functions\+\_\+0.\+js}
+    \subitem {search\+Data}, \hyperpage{46}
+  \item {functions\+\_\+1.\+js}
+    \subitem {search\+Data}, \hyperpage{47}
+  \item {functions\+\_\+2.\+js}
+    \subitem {search\+Data}, \hyperpage{47}
+  \item {functions\+\_\+3.\+js}
+    \subitem {search\+Data}, \hyperpage{47}
+  \item {functions\+\_\+4.\+js}
+    \subitem {search\+Data}, \hyperpage{48}
+
+  \indexspace
+
+  \item {get\+X\+Pos}
+    \subitem {search.\+js}, \hyperpage{49}
+  \item {get\+Y\+Pos}
+    \subitem {search.\+js}, \hyperpage{49}
+
+  \indexspace
+
+  \item {has\+Class}
+    \subitem {bootstrap.\+min.\+js}, \hyperpage{58}
+  \item {home}
+    \subitem {match\+App\+::views}, \hyperpage{16}
+
+  \indexspace
+
+  \item {I\+N\+S\+T\+A\+L\+L\+E\+D\+\_\+\+A\+P\+P\+S}
+    \subitem {Platypus\+::settings}, \hyperpage{18}
+  \item {if}
+    \subitem {bootstrap.\+js}, \hyperpage{56}
+    \subitem {bootstrap.\+min.\+js}, \hyperpage{58}
+    \subitem {jquery.\+js}, \hyperpage{32}
+  \item {index}
+    \subitem {match\+App\+::views}, \hyperpage{17}
+  \item {index\+Section\+Labels}
+    \subitem {searchdata.\+js}, \hyperpage{49}
+  \item {index\+Section\+Names}
+    \subitem {searchdata.\+js}, \hyperpage{49}
+  \item {index\+Sections\+With\+Content}
+    \subitem {searchdata.\+js}, \hyperpage{49}
+  \item {init\+\_\+search}
+    \subitem {search.\+js}, \hyperpage{49}
+
+  \indexspace
+
+  \item {jquery.\+js}
+    \subitem {a\+D}, \hyperpage{32}
+    \subitem {a\+M}, \hyperpage{32}
+    \subitem {a\+Q}, \hyperpage{32}
+    \subitem {a\+Z}, \hyperpage{32}
+    \subitem {ap}, \hyperpage{32}
+    \subitem {au}, \hyperpage{32}
+    \subitem {b}, \hyperpage{31, 32}
+    \subitem {bb}, \hyperpage{41}
+    \subitem {bq}, \hyperpage{41}
+    \subitem {bs}, \hyperpage{41}
+    \subitem {c}, \hyperpage{42}
+    \subitem {css}, \hyperpage{42}
+    \subitem {cur\+C\+S\+S}, \hyperpage{42}
+    \subitem {each}, \hyperpage{31}
+    \subitem {extend}, \hyperpage{31}
+    \subitem {if}, \hyperpage{32}
+    \subitem {k}, \hyperpage{42}
+    \subitem {L}, \hyperpage{42}
+    \subitem {p}, \hyperpage{32}
+    \subitem {Z}, \hyperpage{42}
+
+  \indexspace
+
+  \item {k}
+    \subitem {jquery.\+js}, \hyperpage{42}
+  \item {key}
+    \subitem {match\+App\+::templatetags\+::dict\+\_\+helper}, 
+		\hyperpage{16}
+
+  \indexspace
+
+  \item {L}
+    \subitem {jquery.\+js}, \hyperpage{42}
+  \item {L\+A\+N\+G\+U\+A\+G\+E\+\_\+\+C\+O\+D\+E}
+    \subitem {Platypus\+::settings}, \hyperpage{18}
+
+  \indexspace
+
+  \item {M\+I\+D\+D\+L\+E\+W\+A\+R\+E\+\_\+\+C\+L\+A\+S\+S\+E\+S}
+    \subitem {Platypus\+::settings}, \hyperpage{19}
+  \item {main}
+    \subitem {match\+App\+::matching\+Algorithm\+::remove\+Course}, 
+		\hyperpage{12}
+    \subitem {match\+App\+::matching\+Algorithm\+::return\+Course\+List}, 
+		\hyperpage{13}
+    \subitem {match\+App\+::matching\+Algorithm\+::return\+Matches\+By\+Course}, 
+		\hyperpage{13}
+  \item {manage}, \hyperpage{9}
+  \item {manage.\+py}, \hyperpage{29}
+  \item {match\+App}, \hyperpage{9}
+  \item {match\+App.\+admin}, \hyperpage{9}
+  \item {match\+App.\+forms}, \hyperpage{9}
+  \item {match\+App.\+forms.\+User\+Form}, \hyperpage{26}
+  \item {match\+App.\+forms.\+User\+Form.\+Meta}, \hyperpage{24}
+  \item {match\+App.\+matching\+Algorithm}, \hyperpage{9}
+  \item {match\+App.\+matching\+Algorithm.\+add\+Course}, 
+		\hyperpage{10}
+  \item {match\+App.\+matching\+Algorithm.\+query\+And\+Match\+Courses}, 
+		\hyperpage{10}
+  \item {match\+App.\+matching\+Algorithm.\+query\+And\+Match\+Sections}, 
+		\hyperpage{11}
+  \item {match\+App.\+matching\+Algorithm.\+remove\+Course}, 
+		\hyperpage{12}
+  \item {match\+App.\+matching\+Algorithm.\+return\+Course\+List}, 
+		\hyperpage{12}
+  \item {match\+App.\+matching\+Algorithm.\+return\+Matches\+By\+Course}, 
+		\hyperpage{13}
+  \item {match\+App.\+matching\+Algorithm.\+return\+Matches\+By\+Section}, 
+		\hyperpage{13}
+  \item {match\+App.\+matching\+Algorithm.\+return\+Sections\+List}, 
+		\hyperpage{14}
+  \item {match\+App.\+matching\+Algorithm.\+return\+Student\+Data}, 
+		\hyperpage{15}
+  \item {match\+App.\+models}, \hyperpage{15}
+  \item {match\+App.\+models.\+Course}, \hyperpage{23}
+  \item {match\+App.\+models.\+Section}, \hyperpage{24}
+  \item {match\+App.\+models.\+Student}, \hyperpage{25}
+  \item {match\+App.\+templatetags}, \hyperpage{15}
+  \item {match\+App.\+templatetags.\+dict\+\_\+helper}, \hyperpage{16}
+  \item {match\+App.\+tests}, \hyperpage{16}
+  \item {match\+App.\+urls}, \hyperpage{16}
+  \item {match\+App.\+views}, \hyperpage{16}
+  \item {match\+App/\+\_\+\+\_\+init\+\_\+\+\_\+.\+py}, \hyperpage{29}
+  \item {match\+App/admin.\+py}, \hyperpage{30}
+  \item {match\+App/forms.\+py}, \hyperpage{30}
+  \item {match\+App/html/dynsections.\+js}, \hyperpage{30}
+  \item {match\+App/html/jquery.\+js}, \hyperpage{30}
+  \item {match\+App/html/search/all\+\_\+0.\+js}, \hyperpage{42}
+  \item {match\+App/html/search/all\+\_\+1.\+js}, \hyperpage{42}
+  \item {match\+App/html/search/all\+\_\+2.\+js}, \hyperpage{43}
+  \item {match\+App/html/search/all\+\_\+3.\+js}, \hyperpage{43}
+  \item {match\+App/html/search/all\+\_\+4.\+js}, \hyperpage{43}
+  \item {match\+App/html/search/all\+\_\+5.\+js}, \hyperpage{44}
+  \item {match\+App/html/search/all\+\_\+6.\+js}, \hyperpage{44}
+  \item {match\+App/html/search/classes\+\_\+0.\+js}, \hyperpage{45}
+  \item {match\+App/html/search/classes\+\_\+1.\+js}, \hyperpage{45}
+  \item {match\+App/html/search/classes\+\_\+2.\+js}, \hyperpage{45}
+  \item {match\+App/html/search/classes\+\_\+3.\+js}, \hyperpage{46}
+  \item {match\+App/html/search/files\+\_\+0.\+js}, \hyperpage{46}
+  \item {match\+App/html/search/functions\+\_\+0.\+js}, \hyperpage{46}
+  \item {match\+App/html/search/functions\+\_\+1.\+js}, \hyperpage{47}
+  \item {match\+App/html/search/functions\+\_\+2.\+js}, \hyperpage{47}
+  \item {match\+App/html/search/functions\+\_\+3.\+js}, \hyperpage{47}
+  \item {match\+App/html/search/functions\+\_\+4.\+js}, \hyperpage{48}
+  \item {match\+App/html/search/namespaces\+\_\+0.\+js}, \hyperpage{48}
+  \item {match\+App/html/search/search.\+js}, \hyperpage{48}
+  \item {match\+App/html/search/searchdata.\+js}, \hyperpage{49}
+  \item {match\+App/matching\+Algorithm/\+\_\+\+\_\+init\+\_\+\+\_\+.\+py}, 
+		\hyperpage{29}
+  \item {match\+App/matching\+Algorithm/add\+Course.\+py}, 
+		\hyperpage{50}
+  \item {match\+App/matching\+Algorithm/query\+And\+Match\+Courses.\+py}, 
+		\hyperpage{50}
+  \item {match\+App/matching\+Algorithm/query\+And\+Match\+Sections.\+py}, 
+		\hyperpage{50}
+  \item {match\+App/matching\+Algorithm/remove\+Course.\+py}, 
+		\hyperpage{51}
+  \item {match\+App/matching\+Algorithm/return\+Course\+List.\+py}, 
+		\hyperpage{51}
+  \item {match\+App/matching\+Algorithm/return\+Matches\+By\+Course.\+py}, 
+		\hyperpage{51}
+  \item {match\+App/matching\+Algorithm/return\+Matches\+By\+Section.\+py}, 
+		\hyperpage{52}
+  \item {match\+App/matching\+Algorithm/return\+Sections\+List.\+py}, 
+		\hyperpage{52}
+  \item {match\+App/matching\+Algorithm/return\+Student\+Data.\+py}, 
+		\hyperpage{52}
+  \item {match\+App/models.\+py}, \hyperpage{53}
+  \item {match\+App/templatetags/\+\_\+\+\_\+init\+\_\+\+\_\+.\+py}, 
+		\hyperpage{29}
+  \item {match\+App/templatetags/dict\+\_\+helper.\+py}, \hyperpage{53}
+  \item {match\+App/tests.\+py}, \hyperpage{53}
+  \item {match\+App/urls.\+py}, \hyperpage{53}
+  \item {match\+App/views.\+py}, \hyperpage{54}
+  \item {match\+App\+::forms\+::\+User\+Form}
+    \subitem {password}, \hyperpage{27}
+  \item {match\+App\+::forms\+::\+User\+Form\+::\+Meta}
+    \subitem {fields}, \hyperpage{24}
+    \subitem {model}, \hyperpage{24}
+  \item {match\+App\+::matching\+Algorithm\+::add\+Course}
+    \subitem {add\+Course}, \hyperpage{10}
+    \subitem {directory}, \hyperpage{10}
+  \item {match\+App\+::matching\+Algorithm\+::query\+And\+Match\+Courses}
+    \subitem {directory}, \hyperpage{11}
+    \subitem {query\+And\+Match\+Courses}, \hyperpage{11}
+  \item {match\+App\+::matching\+Algorithm\+::query\+And\+Match\+Sections}
+    \subitem {directory}, \hyperpage{11}
+    \subitem {query\+And\+Match\+Sections}, \hyperpage{11}
+  \item {match\+App\+::matching\+Algorithm\+::remove\+Course}
+    \subitem {directory}, \hyperpage{12}
+    \subitem {main}, \hyperpage{12}
+    \subitem {remove\+Course}, \hyperpage{12}
+  \item {match\+App\+::matching\+Algorithm\+::return\+Course\+List}
+    \subitem {directory}, \hyperpage{13}
+    \subitem {main}, \hyperpage{13}
+    \subitem {return\+Course\+List}, \hyperpage{13}
+  \item {match\+App\+::matching\+Algorithm\+::return\+Matches\+By\+Course}
+    \subitem {directory}, \hyperpage{13}
+    \subitem {main}, \hyperpage{13}
+    \subitem {return\+Matches\+By\+Course}, \hyperpage{13}
+  \item {match\+App\+::matching\+Algorithm\+::return\+Matches\+By\+Section}
+    \subitem {directory}, \hyperpage{14}
+    \subitem {return\+Matches\+By\+Section}, \hyperpage{14}
+  \item {match\+App\+::matching\+Algorithm\+::return\+Sections\+List}
+    \subitem {directory}, \hyperpage{14}
+    \subitem {return\+Sections\+List}, \hyperpage{14}
+  \item {match\+App\+::matching\+Algorithm\+::return\+Student\+Data}
+    \subitem {directory}, \hyperpage{15}
+    \subitem {return\+Student\+Data}, \hyperpage{15}
+  \item {match\+App\+::models\+::\+Course}
+    \subitem {\+\_\+\+\_\+unicode\+\_\+\+\_\+}, \hyperpage{23}
+    \subitem {catalog\+\_\+page}, \hyperpage{24}
+    \subitem {course\+\_\+number}, \hyperpage{24}
+    \subitem {dept\+\_\+id}, \hyperpage{24}
+    \subitem {title}, \hyperpage{24}
+  \item {match\+App\+::models\+::\+Section}
+    \subitem {\+\_\+\+\_\+unicode\+\_\+\+\_\+}, \hyperpage{25}
+    \subitem {class\+\_\+id}, \hyperpage{25}
+    \subitem {course\+\_\+title}, \hyperpage{25}
+    \subitem {section\+\_\+number}, \hyperpage{25}
+  \item {match\+App\+::models\+::\+Student}
+    \subitem {\+\_\+\+\_\+unicode\+\_\+\+\_\+}, \hyperpage{26}
+    \subitem {course\+\_\+list}, \hyperpage{26}
+    \subitem {user}, \hyperpage{26}
+  \item {match\+App\+::templatetags\+::dict\+\_\+helper}
+    \subitem {key}, \hyperpage{16}
+    \subitem {register}, \hyperpage{16}
+  \item {match\+App\+::views}
+    \subitem {classpage}, \hyperpage{16}
+    \subitem {home}, \hyperpage{16}
+    \subitem {index}, \hyperpage{17}
+    \subitem {register}, \hyperpage{17}
+    \subitem {user\+\_\+login}, \hyperpage{17}
+    \subitem {user\+\_\+logout}, \hyperpage{17}
+  \item {model}
+    \subitem {match\+App\+::forms\+::\+User\+Form\+::\+Meta}, 
+		\hyperpage{24}
+
+  \indexspace
+
+  \item {namespaces\+\_\+0.\+js}
+    \subitem {search\+Data}, \hyperpage{48}
+  \item {no\+Conflict}
+    \subitem {bootstrap.\+min.\+js}, \hyperpage{59}
+
+  \indexspace
+
+  \item {p}
+    \subitem {jquery.\+js}, \hyperpage{32}
+  \item {P\+R\+O\+J\+E\+C\+T\+\_\+\+P\+A\+T\+H}
+    \subitem {Platypus\+::settings}, \hyperpage{19}
+  \item {password}
+    \subitem {match\+App\+::forms\+::\+User\+Form}, \hyperpage{27}
+  \item {Platypus}, \hyperpage{17}
+  \item {Platypus.\+settings}, \hyperpage{17}
+  \item {Platypus.\+urls}, \hyperpage{20}
+  \item {Platypus.\+wsgi}, \hyperpage{20}
+  \item {Platypus/\+\_\+\+\_\+init\+\_\+\+\_\+.\+py}, \hyperpage{29}
+  \item {Platypus/settings.\+py}, \hyperpage{54}
+  \item {Platypus/urls.\+py}, \hyperpage{54}
+  \item {Platypus/wsgi.\+py}, \hyperpage{55}
+  \item {Platypus\+::settings}
+    \subitem {A\+L\+L\+O\+W\+E\+D\+\_\+\+H\+O\+S\+T\+S}, \hyperpage{18}
+    \subitem {B\+A\+S\+E\+\_\+\+D\+I\+R}, \hyperpage{18}
+    \subitem {D\+A\+T\+A\+B\+A\+S\+E\+S}, \hyperpage{18}
+    \subitem {D\+E\+B\+U\+G}, \hyperpage{18}
+    \subitem {I\+N\+S\+T\+A\+L\+L\+E\+D\+\_\+\+A\+P\+P\+S}, 
+		\hyperpage{18}
+    \subitem {L\+A\+N\+G\+U\+A\+G\+E\+\_\+\+C\+O\+D\+E}, \hyperpage{18}
+    \subitem {M\+I\+D\+D\+L\+E\+W\+A\+R\+E\+\_\+\+C\+L\+A\+S\+S\+E\+S}, 
+		\hyperpage{19}
+    \subitem {P\+R\+O\+J\+E\+C\+T\+\_\+\+P\+A\+T\+H}, \hyperpage{19}
+    \subitem {R\+O\+O\+T\+\_\+\+U\+R\+L\+C\+O\+N\+F}, \hyperpage{19}
+    \subitem {S\+E\+C\+R\+E\+T\+\_\+\+K\+E\+Y}, \hyperpage{19}
+    \subitem {S\+E\+T\+T\+I\+N\+G\+S\+\_\+\+D\+I\+R}, \hyperpage{19}
+    \subitem {S\+T\+A\+T\+I\+C\+\_\+\+P\+A\+T\+H}, \hyperpage{19}
+    \subitem {S\+T\+A\+T\+I\+C\+\_\+\+U\+R\+L}, \hyperpage{19}
+    \subitem {S\+T\+A\+T\+I\+C\+F\+I\+L\+E\+S\+\_\+\+D\+I\+R\+S}, 
+		\hyperpage{19}
+    \subitem {T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+D\+E\+B\+U\+G}, 
+		\hyperpage{19}
+    \subitem {T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+D\+I\+R\+S}, \hyperpage{19}
+    \subitem {T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+P\+A\+T\+H}, \hyperpage{19}
+    \subitem {T\+I\+M\+E\+\_\+\+Z\+O\+N\+E}, \hyperpage{19}
+    \subitem {U\+S\+E\+\_\+\+I18\+N}, \hyperpage{19}
+    \subitem {U\+S\+E\+\_\+\+L10\+N}, \hyperpage{19}
+    \subitem {U\+S\+E\+\_\+\+T\+Z}, \hyperpage{20}
+    \subitem {W\+S\+G\+I\+\_\+\+A\+P\+P\+L\+I\+C\+A\+T\+I\+O\+N}, 
+		\hyperpage{20}
+  \item {Platypus\+::urls}
+    \subitem {urlpatterns}, \hyperpage{20}
+  \item {Platypus\+::wsgi}
+    \subitem {application}, \hyperpage{20}
+  \item {populate}, \hyperpage{20}
+    \subitem {add\+\_\+course}, \hyperpage{21}
+    \subitem {add\+\_\+section}, \hyperpage{21}
+    \subitem {add\+\_\+student}, \hyperpage{21}
+    \subitem {populate}, \hyperpage{21}
+  \item {populate.\+py}, \hyperpage{55}
+
+  \indexspace
+
+  \item {query\+And\+Match\+Courses}
+    \subitem {match\+App\+::matching\+Algorithm\+::query\+And\+Match\+Courses}, 
+		\hyperpage{11}
+  \item {query\+And\+Match\+Sections}
+    \subitem {match\+App\+::matching\+Algorithm\+::query\+And\+Match\+Sections}, 
+		\hyperpage{11}
+
+  \indexspace
+
+  \item {R\+O\+O\+T\+\_\+\+U\+R\+L\+C\+O\+N\+F}
+    \subitem {Platypus\+::settings}, \hyperpage{19}
+  \item {register}
+    \subitem {match\+App\+::templatetags\+::dict\+\_\+helper}, 
+		\hyperpage{16}
+    \subitem {match\+App\+::views}, \hyperpage{17}
+  \item {remove\+Course}
+    \subitem {match\+App\+::matching\+Algorithm\+::remove\+Course}, 
+		\hyperpage{12}
+  \item {return\+Course\+List}
+    \subitem {match\+App\+::matching\+Algorithm\+::return\+Course\+List}, 
+		\hyperpage{13}
+  \item {return\+Matches\+By\+Course}
+    \subitem {match\+App\+::matching\+Algorithm\+::return\+Matches\+By\+Course}, 
+		\hyperpage{13}
+  \item {return\+Matches\+By\+Section}
+    \subitem {match\+App\+::matching\+Algorithm\+::return\+Matches\+By\+Section}, 
+		\hyperpage{14}
+  \item {return\+Sections\+List}
+    \subitem {match\+App\+::matching\+Algorithm\+::return\+Sections\+List}, 
+		\hyperpage{14}
+  \item {return\+Student\+Data}
+    \subitem {match\+App\+::matching\+Algorithm\+::return\+Student\+Data}, 
+		\hyperpage{15}
+
+  \indexspace
+
+  \item {S\+E\+C\+R\+E\+T\+\_\+\+K\+E\+Y}
+    \subitem {Platypus\+::settings}, \hyperpage{19}
+  \item {S\+E\+T\+T\+I\+N\+G\+S\+\_\+\+D\+I\+R}
+    \subitem {Platypus\+::settings}, \hyperpage{19}
+  \item {S\+T\+A\+T\+I\+C\+\_\+\+P\+A\+T\+H}
+    \subitem {Platypus\+::settings}, \hyperpage{19}
+  \item {S\+T\+A\+T\+I\+C\+\_\+\+U\+R\+L}
+    \subitem {Platypus\+::settings}, \hyperpage{19}
+  \item {S\+T\+A\+T\+I\+C\+F\+I\+L\+E\+S\+\_\+\+D\+I\+R\+S}
+    \subitem {Platypus\+::settings}, \hyperpage{19}
+  \item {search.\+js}
+    \subitem {convert\+To\+Id}, \hyperpage{49}
+    \subitem {create\+Results}, \hyperpage{49}
+    \subitem {get\+X\+Pos}, \hyperpage{49}
+    \subitem {get\+Y\+Pos}, \hyperpage{49}
+    \subitem {init\+\_\+search}, \hyperpage{49}
+    \subitem {Search\+Box}, \hyperpage{49}
+    \subitem {Search\+Results}, \hyperpage{49}
+    \subitem {set\+Class\+Attr}, \hyperpage{49}
+    \subitem {set\+Key\+Actions}, \hyperpage{49}
+  \item {Search\+Box}
+    \subitem {search.\+js}, \hyperpage{49}
+  \item {search\+Data}
+    \subitem {all\+\_\+0.\+js}, \hyperpage{42}
+    \subitem {all\+\_\+1.\+js}, \hyperpage{42}
+    \subitem {all\+\_\+2.\+js}, \hyperpage{43}
+    \subitem {all\+\_\+3.\+js}, \hyperpage{43}
+    \subitem {all\+\_\+4.\+js}, \hyperpage{44}
+    \subitem {all\+\_\+5.\+js}, \hyperpage{44}
+    \subitem {all\+\_\+6.\+js}, \hyperpage{44}
+    \subitem {classes\+\_\+0.\+js}, \hyperpage{45}
+    \subitem {classes\+\_\+1.\+js}, \hyperpage{45}
+    \subitem {classes\+\_\+2.\+js}, \hyperpage{45}
+    \subitem {classes\+\_\+3.\+js}, \hyperpage{46}
+    \subitem {files\+\_\+0.\+js}, \hyperpage{46}
+    \subitem {functions\+\_\+0.\+js}, \hyperpage{46}
+    \subitem {functions\+\_\+1.\+js}, \hyperpage{47}
+    \subitem {functions\+\_\+2.\+js}, \hyperpage{47}
+    \subitem {functions\+\_\+3.\+js}, \hyperpage{47}
+    \subitem {functions\+\_\+4.\+js}, \hyperpage{48}
+    \subitem {namespaces\+\_\+0.\+js}, \hyperpage{48}
+  \item {Search\+Results}
+    \subitem {search.\+js}, \hyperpage{49}
+  \item {searchdata.\+js}
+    \subitem {index\+Section\+Labels}, \hyperpage{49}
+    \subitem {index\+Section\+Names}, \hyperpage{49}
+    \subitem {index\+Sections\+With\+Content}, \hyperpage{49}
+  \item {section\+\_\+number}
+    \subitem {match\+App\+::models\+::\+Section}, \hyperpage{25}
+  \item {set\+Class\+Attr}
+    \subitem {search.\+js}, \hyperpage{49}
+  \item {set\+Key\+Actions}
+    \subitem {search.\+js}, \hyperpage{49}
+  \item {set\+State}
+    \subitem {bootstrap.\+min.\+js}, \hyperpage{59}
+  \item {static/bootstrap/js/bootstrap.\+js}, \hyperpage{55}
+  \item {static/bootstrap/js/bootstrap.\+min.\+js}, \hyperpage{57}
+  \item {static/bootstrap/js/npm.\+js}, \hyperpage{59}
+
+  \indexspace
+
+  \item {T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+D\+E\+B\+U\+G}
+    \subitem {Platypus\+::settings}, \hyperpage{19}
+  \item {T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+D\+I\+R\+S}
+    \subitem {Platypus\+::settings}, \hyperpage{19}
+  \item {T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+P\+A\+T\+H}
+    \subitem {Platypus\+::settings}, \hyperpage{19}
+  \item {T\+I\+M\+E\+\_\+\+Z\+O\+N\+E}
+    \subitem {Platypus\+::settings}, \hyperpage{19}
+  \item {T\+R\+A\+N\+S\+I\+T\+I\+O\+N\+\_\+\+D\+U\+R\+A\+T\+I\+O\+N}
+    \subitem {bootstrap.\+min.\+js}, \hyperpage{59}
+  \item {title}
+    \subitem {match\+App\+::models\+::\+Course}, \hyperpage{24}
+  \item {toggle}
+    \subitem {bootstrap.\+min.\+js}, \hyperpage{59}
+  \item {toggle\+Folder}
+    \subitem {dynsections.\+js}, \hyperpage{30}
+  \item {toggle\+Inherit}
+    \subitem {dynsections.\+js}, \hyperpage{30}
+  \item {toggle\+Level}
+    \subitem {dynsections.\+js}, \hyperpage{30}
+  \item {toggle\+Visibility}
+    \subitem {dynsections.\+js}, \hyperpage{30}
+  \item {transition\+End}
+    \subitem {bootstrap.\+js}, \hyperpage{56}
+
+  \indexspace
+
+  \item {U\+S\+E\+\_\+\+I18\+N}
+    \subitem {Platypus\+::settings}, \hyperpage{19}
+  \item {U\+S\+E\+\_\+\+L10\+N}
+    \subitem {Platypus\+::settings}, \hyperpage{19}
+  \item {U\+S\+E\+\_\+\+T\+Z}
+    \subitem {Platypus\+::settings}, \hyperpage{20}
+  \item {update\+Stripes}
+    \subitem {dynsections.\+js}, \hyperpage{30}
+  \item {urlpatterns}
+    \subitem {Platypus\+::urls}, \hyperpage{20}
+  \item {user}
+    \subitem {match\+App\+::models\+::\+Student}, \hyperpage{26}
+  \item {user\+\_\+login}
+    \subitem {match\+App\+::views}, \hyperpage{17}
+  \item {user\+\_\+logout}
+    \subitem {match\+App\+::views}, \hyperpage{17}
+
+  \indexspace
+
+  \item {V\+E\+R\+S\+I\+O\+N}
+    \subitem {bootstrap.\+min.\+js}, \hyperpage{59}
+  \item {version}
+    \subitem {bootstrap.\+js}, \hyperpage{56}
+
+  \indexspace
+
+  \item {W\+S\+G\+I\+\_\+\+A\+P\+P\+L\+I\+C\+A\+T\+I\+O\+N}
+    \subitem {Platypus\+::settings}, \hyperpage{20}
+
+  \indexspace
+
+  \item {Z}
+    \subitem {jquery.\+js}, \hyperpage{42}
+
+\end{theindex}

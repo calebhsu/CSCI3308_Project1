@@ -1,0 +1,24 @@
+\hypertarget{namespace_platypus_1_1urls}{}\section{Platypus.\+urls Namespace Reference}
+\label{namespace_platypus_1_1urls}\index{Platypus.\+urls@{Platypus.\+urls}}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+tuple \hyperlink{namespace_platypus_1_1urls_ab83fb06ba5b3c9c5d1531d735ccd82f1}{urlpatterns}
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\hypertarget{namespace_platypus_1_1urls_ab83fb06ba5b3c9c5d1531d735ccd82f1}{}\index{Platypus\+::urls@{Platypus\+::urls}!urlpatterns@{urlpatterns}}
+\index{urlpatterns@{urlpatterns}!Platypus\+::urls@{Platypus\+::urls}}
+\subsubsection[{urlpatterns}]{\setlength{\rightskip}{0pt plus 5cm}tuple Platypus.\+urls.\+urlpatterns}\label{namespace_platypus_1_1urls_ab83fb06ba5b3c9c5d1531d735ccd82f1}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = patterns(\textcolor{stringliteral}{''},
+2     \textcolor{comment}{# Examples:}
+3     \textcolor{comment}{# url(r'^$', 'Platypus.views.home', name='home'),}
+4     \textcolor{comment}{# url(r'^blog/', include('blog.urls')),}
+5 
+6     url(\textcolor{stringliteral}{r'^admin/'}, include(admin.site.urls)),
+7     url(\textcolor{stringliteral}{r'^matchApp/'}, include(\textcolor{stringliteral}{'matchApp.urls'})),
+8 )
+\end{DoxyCode}
