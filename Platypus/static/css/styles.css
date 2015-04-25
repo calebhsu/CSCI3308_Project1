@@ -161,6 +161,7 @@ button {
   margin-left: 30%;
   color: white;
   margin-top: 2%;
+  position: relative;
 }
 
 .sectionbutton {
@@ -168,6 +169,7 @@ button {
   height: 30px;
   margin-left: 220%;
   margin-top: 10%;
+  position: relative;
 }
 
 #back {
