@@ -16,11 +16,11 @@ def populate():
     csci_#### -- courses added
     sample_course_list_# -- list of sample courses with which to test the app.
     """
-    csci_1300 = add_course("Computer Science 1: Starting Computing", "CSCI", 1300, "http://www.colorado.edu/catalog/2015-16/courses/engr/b-csci/1300-computer-science-1-starting-computing")
-    csci_1310 = add_course("Computer Science 1: Starting Computing - Experienced", "CSCI", 1310, "http://www.colorado.edu/catalog/2015-16/courses/engr/b-csci/1310-computer-science-1-starting-computing-experienced")
-    csci_2270 = add_course("Computer Science 2: Data Structures", "CSCI", 2270, "http://www.colorado.edu/catalog/2015-16/courses/engr/b-csci/2270-computer-science-2-data-structures")
+    csci_1300 = add_course("CS 1: Starting Computing", "CSCI", 1300, "http://www.colorado.edu/catalog/2015-16/courses/engr/b-csci/1300-computer-science-1-starting-computing")
+    csci_1310 = add_course("CS 1: Starting Computing - Experienced", "CSCI", 1310, "http://www.colorado.edu/catalog/2015-16/courses/engr/b-csci/1310-computer-science-1-starting-computing-experienced")
+    csci_2270 = add_course("CS 2: Data Structures", "CSCI", 2270, "http://www.colorado.edu/catalog/2015-16/courses/engr/b-csci/2270-computer-science-2-data-structures")
     csci_2400 = add_course("Computer Systems", "CSCI", 2400, "http://www.colorado.edu/catalog/2015-16/courses/engr/b-csci/2400-computer-systems")
-    csci_2820 = add_course("Linear Algebra with Computer Science Applications", "CSCI", 2820, "http://www.colorado.edu/catalog/2015-16/courses/engr/b-csci/2820-linear-algebra-computer-science-applications")
+    csci_2820 = add_course("Linear Algebra with CS Applications", "CSCI", 2820, "http://www.colorado.edu/catalog/2015-16/courses/engr/b-csci/2820-linear-algebra-computer-science-applications")
     csci_2824 = add_course("Discrete Structures", "CSCI", 2824, "http://www.colorado.edu/catalog/2015-16/courses/engr/b-csci/2824-discrete-structures")
     csci_3104 = add_course("Algorithms", "CSCI", 3104, "http://www.colorado.edu/catalog/2015-16/courses/engr/b-csci/3104-algorithms")
     csci_3155 = add_course("Principles of Programming Languages", "CSCI", 3155, "http://www.colorado.edu/catalog/2015-16/courses/engr/b-csci/3155-principles-programming-languages")

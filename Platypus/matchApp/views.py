@@ -16,7 +16,6 @@ from matchApp.forms import UserForm
 from django.core.management import call_command
 
 
-# Import from child directory matchingAlgorithm
 """ import matching algorithm from child directory"""
 from matchApp.matchingAlgorithm.returnCourseList import returnCourseList
 from matchApp.matchingAlgorithm.returnMatchesByCourse import returnMatchesByCourse
@@ -31,12 +30,8 @@ def index(request):
    
     context = RequestContext(request)
 
-    # Note the key boldmessage is the same as {{ boldmessage }} in the template!
     context_dict = {}
 
-    
-    # We make use of the shortcut function to make our lives easier.
-    # Note that the first parameter is the template we wish to use.
     return render_to_response('matchApp/login.html', context_dict, context)
 
 def register(request):
@@ -54,8 +49,7 @@ def register(request):
             # Save the user's form data to the database.
             userData = user_form.save()
 
-            # Now we hash the password with the set_password method.
-            # Once hashed, we can update the user object.
+            # Hashes password and updates user object
             userData.set_password(userData.password)
             userData.save()
 
@@ -68,6 +62,7 @@ def register(request):
 
             userData = authenticate(username=request.POST['username'], password=request.POST['password'])
             login(request, userData)
+
         # Invalid form or forms - mistakes or something else?
         # Print problems to the terminal.
         # They'll also be shown to the user.
@@ -460,5 +455,3 @@ def add3753003(request):
     username = str(user.username)
     addCourse(user.username, '3753003')
     return HttpResponseRedirect('/matchApp/home')
-
-
