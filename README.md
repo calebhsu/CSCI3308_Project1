@@ -10,6 +10,47 @@ Paige Alleman, Caleb Hsu, Leo Kim, Mitchell Lewis, Tommy Wagner
 ##AutoDoc HTML Navigation: 
 To use the HTML Doxygen output, download the HTML folder under the AutoDocumentation section in the repository. Run index.html from that file to use a clickableversion of the auto documentation. Alternatively, view the refman.pdf file in the same AutoDocumentation section. 
 
+## Repository Organization
+```
+└── CSCI3308_Project1
+    ├── Platypus                            # Contains the Platypus project
+    |   ├── AutoDocumentation               # Folder containing documentation
+    |   |   ├── html                        # Contains Doxygen-generated HTML files for online documentation
+    |   |   ├── latex                       # Documentation in latex format
+    |   |   ├── AutoDocConfiguration_1  
+    |   |   └── refman.pdf                  # Generated documentation pdf file.
+    |   ├── Platypus                        # Contains files that determine Platypus settings
+    |   ├── matchApp                        # Contains main source code
+    |   |   ├── matchingAlgorithm           # Contains course and section match code
+    |   |   ├── templatetags
+    |   |   ├── admin.py
+    |   |   ├── forms.py
+    |   |   ├── models.py                   # Contains database models
+    |   |   ├── tests.py     
+    |   |   ├── urls.py
+    |   |   └── views.py                    # Contains most of structural source code
+    |   ├── static                          # Static tools used with Django framework 
+    |   |   ├── bootstrap           
+    |   |   |   ├── css
+    |   |   |   ├── fonts
+    |   |   |   └── js
+    |   |   ├── css
+    |   |   |   └── styles.css              # CSS file for Platypus website
+    |   |   └── images                      # Contains stock image for webpage background
+    |   ├── templates/matchApp              # HTML for Platypus website
+    |   |   ├── addcourses.html
+    |   |   ├── classpage.html
+    |   |   ├── home.html
+    |   |   ├── login.html
+    |   |   └── register.html
+    |   ├── db.sqlite3
+    |   ├── manage.py
+    |   ├── populate.py
+    ├── Project Information                 # Contains files for weekly project submissions in Markdown
+    |   ├── ERDiagram.png
+    |   ├── projectPlan.png
+```
+
 ## Using GitHub
 The following instructions assume the user has
 
