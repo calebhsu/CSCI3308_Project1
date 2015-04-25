@@ -1,10 +1,8 @@
-""" Allows a student to add a course """ 
+""" Allows a student to add a course """
+# Always run this block first so environmental variables are properly loaded
 
-##############################################################################
-# Always run this block first so environmental variables are properly loaded #
 import os
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Platypus.settings')
-##############################################################################
 
 import sys
 import django
@@ -14,8 +12,7 @@ from returnCourseList import returnCourseList
 from returnSectionsList import returnSectionsList
 from returnStudentData	import returnStudentData
 
-##############################################################################
-# Append parent of the parent directory for cwd to system path               #
+# Append parent of the parent directory for cwd to system path
 os.getcwd()
 os.chdir('..')
 os.chdir('..')
@@ -25,7 +22,6 @@ if directory in sys.path:
 	pass
 else:
 	sys.path.append(directory)
-##############################################################################
 
 from matchApp.models import Course, Section, Student, User
 django.setup()
@@ -53,11 +49,3 @@ def addCourse(student_id, section_id):
 
 	student.course_list = course_list
 	student.save()
-
-
-# def main():
-# 	addCourse('bobama', '1300004')
-
-
-# if __name__ == '__main__':
-# 	main()
