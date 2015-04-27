@@ -1,4 +1,3 @@
-
 import os
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Platypus.settings')
 
@@ -16,13 +15,13 @@ class TestPlatypus(TestCase):
 		self.leo = Student(username="Leo")
 		self.mitch.save()
 		self.leo.save()
-		self.soft_tools = Course(title="Soft Tools", course_number= "3308", dept_id = "CSCI" )
-		self.algo = PayGroup(title = "algorithims", course_number = "3104", dept_id = "CSCI")
+		self.soft_tools = Course(title="Soft Tools", course_number= "3308", dept_id = "CSCI")
+		self.algo = Course(title = "Algorithims", course_number = "3104", dept_id = "CSCI")
 		self.soft_tools.save()
 		self.algo.save()
 		self.algo1 = Section(class_id = "CSCI 3104", section_number = "3104001")
-		self.soft_tools1 = section(class_id = "CSCI 3308", section_number = "3308001")
-		self.algo2 = Section(class_id = "CSCI 3104", section_number = "314002")
+		self.soft_tools1 = Section(class_id = "CSCI 3308", section_number = "3308001")
+		self.algo2 = Section(class_id = "CSCI 3104", section_number = "3104002")
 		self.algo1.save()
 		self.algo2.save()
 		self.soft_tools1.save()
@@ -33,5 +32,3 @@ class TestPlatypus(TestCase):
 		self.leo.course_list.add(self.soft_tools.title)
 		self.mitch.course_list.add(self.algo.title)
 		self.leo.course_list.add(self.algo.title)
-		
-
