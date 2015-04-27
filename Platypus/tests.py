@@ -71,10 +71,10 @@ class TestPlatypus(TestCase):
 		self.assertEqual(User.objects.filter(username="platypus").exists(), True)
 
 	def test_register_nonUnique_error(self):
-		response = self.client.post('/share/register/', {'email' : "platypus@emails.test",
+		response = self.client.post('/matchApp/register/', {'email' : "platypus@emails.test",
 													'username' : "platypus",
 													'password' : "platypus123"})
-		response = self.client.post('/share/register/', {'email' : "platypus@emails.test",
+		response = self.client.post('/matchApp/register/', {'email' : "platypus@emails.test",
 													'username' : "platypus",
 													'password' : "platypus123"})
 		self.assertNotEqual(User.objects.filter(username="platypus").count(), 2)
