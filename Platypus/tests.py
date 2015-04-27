@@ -37,13 +37,13 @@ class TestPlatypus(TestCase):
 
 
 		self.soft_tools = Course(title="Soft Tools", course_number= "3308", dept_id = "CSCI" )
-		self.algo = Course(title = "algorithims", course_number = "3104", dept_id = "CSCI")
+		self.algo = Course(title = "Algorithims", course_number = "3104", dept_id = "CSCI")
 		self.soft_tools.save()
 		self.algo.save()
 
 		self.algo1 = Section(class_id = 3104, section_number = "3104001")
 		self.soft_tools1 = Section(class_id = 3308, section_number = "3308001")
-		self.algo2 = Section(class_id = 3104, section_number = "314002")
+		self.algo2 = Section(class_id = 3104, section_number = "3104002")
 		self.algo1.save()
 		self.algo2.save()
 		self.soft_tools1.save()
@@ -87,8 +87,3 @@ class TestPlatypus(TestCase):
 
 if __name__ == '__main__':
 	unittest.main()
-
-
-
-		
-
