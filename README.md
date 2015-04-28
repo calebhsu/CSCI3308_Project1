@@ -105,6 +105,27 @@ $ git fetch upstream
 $ git pull upstream master
 ```
 
+## To Run
+The following instructions assume the user has
+
+1. Python 2
+2. Python package <i>Setuptools</i> installed
+3. Pip installed
+
+##### Set Up Database
+In CSCI3308_Project1/Platypus, run
+```sh
+python manage.py makemigrations
+python manage.py migrate
+```
+
+##### Run Local Host
+Then, run
+```sh
+python manage.py runserver
+```
+This will open up a local development server at http://localhost:8000/matchApp/
+
 ## Team Rules & Guidelines
 1. Communicate intentions to learn/accomplish a goal of the project to other members.
 2. Communicate intentions to accomplish class assignments so that we can work together.
